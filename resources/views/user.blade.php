@@ -8,7 +8,7 @@
 		<div class="wrapper ">
 		    <div class="sidebar" data-color="white" data-active-color="danger">
 		      	<div class="logo">
-		      		<a href="/">
+		      		<a href="/main">
 			      		<img class="rounded mx-auto d-block" src="{{ asset('/img/wirecard-logo.png') }}">
 			      	</a>
 		      	</div>

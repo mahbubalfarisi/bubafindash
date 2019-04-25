@@ -20,7 +20,7 @@
 			                		<h5 class="card-title" style="text-align: center;">Login Form</h5>
 			              		</div>
 			              		<div class="card-body">
-			                		<form>
+			                		<form action="/main">
 					                  	<div class="row">
 					                    	<div class="col-md-6 pr-1 ml-auto mr-auto" style="border-left: 2px solid #cc0000;">
 					                      		<div class="form-group">
