@@ -25,7 +25,7 @@
 					                    	<div class="col-md-6 pr-1 ml-auto mr-auto" style="border-left: 2px solid #cc0000;">
 					                      		<div class="form-group">
 					                        		<label for="exampleInputEmail1">Email address</label>
-					                        		<input type="email" class="form-control">
+					                        		<input type="email" class="form-control" required>
 					                      		</div>
 					                    	</div>
 					                  	</div>
@@ -33,7 +33,7 @@
 						                    <div class="col-md-6 pr-1 ml-auto mr-auto" style="border-left: 2px solid #cc0000;">
 					                      		<div class="form-group">
 						                        	<label>Password</label>
-						                        	<input type="password" class="form-control">
+						                        	<input type="password" class="form-control" required>
 						                      	</div>
 						                    </div>
 					                  	</div>

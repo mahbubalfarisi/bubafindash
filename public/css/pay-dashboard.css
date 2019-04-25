@@ -3408,13 +3408,13 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .dropdown-menu .dropdown-item:first-child {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
 }
 
 .dropdown-menu .dropdown-item:last-child {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
 }
 
 .select .dropdown-menu .dropdown-item:first-child {
@@ -3425,7 +3425,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
   color: #FFFFFF !important;
-  opacity: 1;
+  background-color: #00041F;
+  opacity: .7;
   text-decoration: none;
 }
 
