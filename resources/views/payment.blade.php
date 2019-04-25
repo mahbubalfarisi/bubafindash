@@ -15,13 +15,13 @@
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav">
 		          		<li>
-		            		<a href="./">
+		            		<a href="/main">
 		              			<i class="fas fa-columns"></i>
 		              			<p>Dashboard</p>
 		            		</a>
 		          		</li>
 		          		<li>
-		            		<a class="nav-link" href="/payment">
+		            		<a class="nav-link" href="#">
 		              			<i class="far fa-credit-card"></i>
 		              			<p>Payment</p>
 		            		</a>
@@ -76,10 +76,14 @@
 				              	<!-- End of Notifications Menu -->
 
 				              	<!-- User Menu -->
-				              	<li class="nav-item">
-					                <a class="nav-link btn-rotate" href="/user">
-					                  	<i class="far fa-user"></i>
+				              	<li class="nav-item btn-rotate dropdown">
+				                	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				                  		<i class="far fa-user"></i>
 				                	</a>
+				                	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+				                  		<a class="dropdown-item" href="/user">Show Profile</a>
+					                  	<a class="dropdown-item" href="/">Log Out</a>
+				                	</div>
 				              	</li>
 				              	<!-- End of User Menu -->
 		            		</ul>

@@ -15,7 +15,7 @@
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav">
 		          		<li>
-		            		<a href="/">
+		            		<a href="/main">
 		              			<i class="fas fa-columns"></i>
 		              			<p>Dashboard</p>
 		            		</a>
@@ -76,10 +76,14 @@
 				              	<!-- End of Notifications Menu -->
 
 				              	<!-- User Menu -->
-				              	<li class="nav-item">
-					                <a class="nav-link btn-rotate" href="/user">
-					                  	<i class="far fa-user"></i>
+				              	<li class="nav-item btn-rotate dropdown">
+				                	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				                  		<i class="far fa-user"></i>
 				                	</a>
+				                	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+				                  		<a class="dropdown-item" href="/user">Show Profile</a>
+					                  	<a class="dropdown-item" href="/">Log Out</a>
+				                	</div>
 				              	</li>
 				              	<!-- End of User Menu -->
 		            		</ul>
@@ -98,7 +102,7 @@
 			                		<div class="author">
 			                  			<i class="far fa-user" style="font-size: 24px"></i>
 			                  			<h5 class="title">Mahbub Haq Al Farisi</h5>
-			                  			<p class="description">@buba_alf</p>
+			                  			<p class="description">mahbub.alfarisi@wirecard.com</p>
 			                  			<a data-toggle="collapse" href="#editprofile-collapse">
 				                  			<button type="submit" class="btn btn-primary btn-round">Edit Profile</button>
 			                  			</a>
