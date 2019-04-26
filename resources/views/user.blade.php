@@ -154,6 +154,18 @@
 		              			<i class="fas fa-layer-group"></i>
 		              			<p>Card Group</p>
 		            		</a>
+		            		<div id="collapse-user" class="panel-collapse collapse in">
+		              			<a href="/setup-card-group">
+		            			<div class="inner-menu">
+			              			<p>Setup Card Group</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-card-group-profile">
+		            			<div class="inner-menu">
+			              			<p>Setup Card Group Profile</p>
+		              			</div>
+		              			</a>
+		              		</div>
 		          		</li>
 		          		<li>
 		            		<a href="#">
