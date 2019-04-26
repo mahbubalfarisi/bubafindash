@@ -4715,12 +4715,25 @@ License - nucleoapp.com/license/
   display: block;
   text-decoration: none;
   position: relative;
-  text-transform: uppercase;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
   padding: 10px 8px;
   line-height: 30px;
   opacity: .7;
+}
+
+.inner-menu {
+  font-size: 12px;
+  width: 80%;
+  height: auto;
+  margin: 10px 0px 0 36px;
+  padding: 10px 8px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.inner-menu > i {
+  font-size: 12px !important;
 }
 
 .sidebar .nav li .nav>li>a,
@@ -4923,6 +4936,8 @@ License - nucleoapp.com/license/
 
 .sidebar[data-color="white"] .nav li:hover:not(.active)>a,
 .sidebar[data-color="white"] .nav li:focus:not(.active)>a,
+.inner-menu:hover:not(.active),
+.inner-menu:focus:not(.active),
 .off-canvas-sidebar[data-color="white"] .nav li:hover:not(.active)>a,
 .off-canvas-sidebar[data-color="white"] .nav li:focus:not(.active)>a {
   background-color: #efb2b2;

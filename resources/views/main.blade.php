@@ -13,7 +13,7 @@
 			      	</a>
 		      	</div>
 		      	<div class="sidebar-wrapper">
-		        	<ul class="nav">
+		        	<ul class="nav panel-group" id="accordion">
 		          		<li class="active">
 		            		<a href="#">
 		              			<i class="fas fa-history"></i>
@@ -21,16 +21,115 @@
 		            		</a>
 		          		</li>
 		          		<li>
-		            		<a href="#">
+		            		<a data-toggle="collapse" data-parent="#accordion" href="#collapse-client">
 		              			<i class="fas fa-male"></i>
 		              			<p>Client</p>
 		            		</a>
+		            		<div id="collapse-client" class="panel-collapse collapse in">
+		              			<a href="/setup-client">
+		            			<div class="inner-menu">
+			              			<p>Setup Client</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-membership">
+		            			<div class="inner-menu">
+			              			<p>Setup Membership</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-site-group">
+		            			<div class="inner-menu">
+			              			<p>Setup Site Group</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-site">
+		            			<div class="inner-menu">
+			              			<p>Setup Site</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-terminal">
+		            			<div class="inner-menu">
+			              			<p>Setup Terminal</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-product-group">
+		            			<div class="inner-menu">
+			              			<p>Setup Product Group</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-product">
+		            			<div class="inner-menu">
+			              			<p>Setup Product</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-product-to-gp">
+		            			<div class="inner-menu">
+			              			<p>Setup Product to Product Group Relation</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-membership-privilege">
+		            			<div class="inner-menu">
+			              			<p>Setup Membership Privilege</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-card-type">
+		            			<div class="inner-menu">
+			              			<p>Setup Card Type</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-industry-classification">
+		            			<div class="inner-menu">
+			              			<p>Setup Industry Classification</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-account-manager">
+		            			<div class="inner-menu">
+			              			<p>Setup Account Manager</p>
+		              			</div>
+		              			</a>
+					      	</div>
 		          		</li>
 		          		<li>
-		            		<a href="/user">
+		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-user">
 		              			<i class="far fa-user"></i>
 		              			<p>Account</p>
 		            		</a>
+		            		<div id="collapse-user" class="panel-collapse collapse in">
+		              			<a href="/setup-account">
+		            			<div class="inner-menu">
+			              			<p>Setup Account</p>
+		              			</div>
+		              			</a>
+		              			<a href="/register-account-to-client">
+		            			<div class="inner-menu">
+			              			<p>Register Account to Client</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-account-CP">
+		            			<div class="inner-menu">
+			              			<p>Setup Account CP</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-account-profile">
+		            			<div class="inner-menu">
+			              			<p>Setup Account Profile</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-card-profile">
+		            			<div class="inner-menu">
+			              			<p>Setup Card Profile</p>
+		              			</div>
+		              			</a>
+		              			<a href="/customize-account-privilege">
+		            			<div class="inner-menu">
+			              			<p>Customize Account Privilege</p>
+		              			</div>
+		              			</a>
+		              			<a href="/register-service">
+		            			<div class="inner-menu">
+			              			<p>Register Service</p>
+		              			</div>
+		              			</a>
+					      	</div>
 		          		</li>
 		          		<li>
 		            		<a href="#">
