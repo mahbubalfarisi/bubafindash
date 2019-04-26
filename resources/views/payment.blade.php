@@ -15,7 +15,7 @@
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav">
 		          		<li>
-		            		<a href="#">
+		            		<a href="/main">
 		              			<i class="fas fa-history"></i>
 		              			<p>Activity</p>
 		            		</a>
@@ -27,7 +27,7 @@
 		            		</a>
 		          		</li>
 		          		<li>
-		            		<a href="#">
+		            		<a href="/user">
 		              			<i class="far fa-user"></i>
 		              			<p>Account</p>
 		            		</a>
@@ -86,7 +86,7 @@
 		              			<p>Fee</p>
 		            		</a>
 		          		</li>
-		          		<li>
+		          		<li class="active">
 		            		<a class="nav-link" href="/payment">
 		              			<i class="far fa-credit-card"></i>
 		              			<p>Payment</p>

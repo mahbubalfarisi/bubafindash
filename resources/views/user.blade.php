@@ -15,7 +15,7 @@
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav">
 		          		<li>
-		            		<a href="#">
+		            		<a href="/main">
 		              			<i class="fas fa-history"></i>
 		              			<p>Activity</p>
 		            		</a>
@@ -26,8 +26,8 @@
 		              			<p>Client</p>
 		            		</a>
 		          		</li>
-		          		<li>
-		            		<a href="#">
+		          		<li class="active">
+		            		<a href="/user">
 		              			<i class="far fa-user"></i>
 		              			<p>Account</p>
 		            		</a>
