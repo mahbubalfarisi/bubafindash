@@ -136,6 +136,18 @@
 		              			<i class="far fa-user-circle"></i>
 		              			<p>Sub Account</p>
 		            		</a>
+		            		<div id="collapse-user" class="panel-collapse collapse in">
+		              			<a href="/setup-sub-account">
+		            			<div class="inner-menu">
+			              			<p>Setup Sub Account</p>
+		              			</div>
+		              			</a>
+		              			<a href="/setup-sub-account-profile">
+		            			<div class="inner-menu">
+			              			<p>Setup Sub Account Profile</p>
+		              			</div>
+		              			</a>
+		              		</div>
 		          		</li>
 		          		<li>
 		            		<a href="#">
