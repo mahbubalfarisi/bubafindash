@@ -14,10 +14,76 @@
 		      	</div>
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav">
+		          		<li class="active">
+		            		<a href="#">
+		              			<i class="fas fa-history"></i>
+		              			<p>Activity</p>
+		            		</a>
+		          		</li>
 		          		<li>
 		            		<a href="#">
-		              			<i class="fas fa-columns"></i>
-		              			<p>Dashboard</p>
+		              			<i class="fas fa-male"></i>
+		              			<p>Client</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="/user">
+		              			<i class="far fa-user"></i>
+		              			<p>Account</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="far fa-user-circle"></i>
+		              			<p>Sub Account</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="fas fa-layer-group"></i>
+		              			<p>Card Group</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="far fa-credit-card"></i>
+		              			<p>Member Card</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="far fa-file-alt"></i>
+		              			<p>Report</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="fas fa-users-cog"></i>
+		              			<p>User Management</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="fas fa-cogs"></i>
+		              			<p>Configuration</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="fas fa-tv"></i>
+		              			<p>Monitoring</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="fas fa-mail-bulk"></i>
+		              			<p>Marketing Message</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="#">
+		              			<i class="fas fa-file-invoice-dollar"></i>
+		              			<p>Fee</p>
 		            		</a>
 		          		</li>
 		          		<li>
@@ -42,7 +108,7 @@
 				                	<span class="navbar-toggler-bar bar3"></span>
 				              	</button>
 		            		</div>
-		            		<a class="navbar-brand">Wirecard Indonesia Payment Dashboard</a>
+		            		<a class="navbar-brand">Wirecard Payment</a>
 		          		</div>
 		          		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 				            <span class="navbar-toggler-bar navbar-kebab"></span>
