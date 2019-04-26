@@ -89,11 +89,11 @@
 					      	</div>
 		          		</li>
 		          		<li>
-		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-user">
+		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-account">
 		              			<i class="far fa-user"></i>
 		              			<p>Account</p>
 		            		</a>
-		            		<div id="collapse-user" class="panel-collapse collapse in">
+		            		<div id="collapse-account" class="panel-collapse collapse in">
 		              			<a href="/setup-account">
 		            			<div class="inner-menu">
 			              			<p>Setup Account</p>
@@ -132,11 +132,11 @@
 					      	</div>
 		          		</li>
 		          		<li>
-		            		<a href="#">
+		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-sub-account">
 		              			<i class="far fa-user-circle"></i>
 		              			<p>Sub Account</p>
 		            		</a>
-		            		<div id="collapse-user" class="panel-collapse collapse in">
+		            		<div id="collapse-sub-account" class="panel-collapse collapse in">
 		              			<a href="/setup-sub-account">
 		            			<div class="inner-menu">
 			              			<p>Setup Sub Account</p>
@@ -150,11 +150,11 @@
 		              		</div>
 		          		</li>
 		          		<li>
-		            		<a href="#">
+		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-card-group">
 		              			<i class="fas fa-layer-group"></i>
 		              			<p>Card Group</p>
 		            		</a>
-		            		<div id="collapse-user" class="panel-collapse collapse in">
+		            		<div id="collapse-card-group" class="panel-collapse collapse in">
 		              			<a href="/setup-card-group">
 		            			<div class="inner-menu">
 			              			<p>Setup Card Group</p>
