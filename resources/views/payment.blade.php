@@ -14,7 +14,7 @@
 		      	</div>
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav" id="accordion">
-		          		<li class="active">
+		          		<li>
 		            		<a href="/main">
 		              			<i class="fas fa-history"></i>
 		              			<p>Activity</p>
@@ -185,7 +185,7 @@
 		              			<p>Fee</p>
 		            		</a>
 		          		</li>
-		          		<li>
+		          		<li class="active">
 		            		<a class="nav-link" href="/payment">
 		              			<i class="far fa-credit-card"></i>
 		              			<p>Payment</p>

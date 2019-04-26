@@ -14,7 +14,7 @@
 		      	</div>
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav" id="accordion">
-		          		<li class="active">
+		          		<li>
 		            		<a href="/main">
 		              			<i class="fas fa-history"></i>
 		              			<p>Activity</p>
