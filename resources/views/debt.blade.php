@@ -430,6 +430,20 @@
 														30000
 													</td>
 												</tr>
+												<tr>
+													<td>
+														Pinjam
+													</td>
+													<td>
+														Kichan
+													</td>
+													<td class="text-right">
+														400000
+													</td>
+													<td class="text-right">
+														400000
+													</td>
+												</tr>
 					                    	</tbody>
 				                  		</table>
 				                	</div>
@@ -455,10 +469,10 @@
 				                    		<tbody>
 												<tr>
 													<td class="text-right">
-														4050000
+														4450000
 													</td>
 													<td class="text-right">
-														4025000
+														4425000
 													</td>
 												</tr>
 											</tbody>
@@ -490,7 +504,7 @@
 				                    		<tbody>
 												<tr>
 													<td class="text-right">
-														1836167,647
+														1836168
 													</td>
 													<td class="text-right">
 														310128
@@ -534,10 +548,10 @@
 														1722506
 													</td>
 													<td class="text-right">
-														4025000
+														4425000
 													</td>
 													<td>
-														234%
+														257%
 													</td>
 													<td>
 														Warning
@@ -572,13 +586,13 @@
 				                    		<tbody>
 												<tr>
 													<td class="text-right">
-														-3714872
+														-4114872
 													</td>
 													<td class="text-right">
 														310128
 													</td>
 													<td>
-														-1198%
+														-1327%
 													</td>
 													<td>
 														Warning
