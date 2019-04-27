@@ -2,217 +2,88 @@
 <html lang="en">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Wirecard Payment">
-	@extends('main-layout')
-  	<title>Payment</title>
+	@extends('insight-layout')
+  	<title>Insight</title>
 	<body>
 		<div class="wrapper ">
-		    <div class="sidebar" data-color="white" data-active-color="danger">
-		      	<div class="logo">
-		      		<a href="/main">
-			      		<img class="rounded mx-auto d-block" src="{{ asset('/img/wirecard-logo.png') }}">
-			      	</a>
-		      	</div>
+		    <div class="sidebar" style="margin-top: 63px;" data-color="white" data-active-color="danger">
 		      	<div class="sidebar-wrapper">
 		        	<ul class="nav" id="accordion">
-		          		<li>
-		            		<a href="/main">
-		              			<i class="fas fa-history"></i>
-		              			<p>Activity</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a data-toggle="collapse" data-parent="#accordion" href="#collapse-client">
-		              			<i class="fas fa-male"></i>
-		              			<p>Client</p>
-		            		</a>
-		            		<div id="collapse-client" class="panel-collapse collapse in">
-		              			<a href="/setup-client">
-		            			<div class="inner-menu">
-			              			<p>Setup Client</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-membership">
-		            			<div class="inner-menu">
-			              			<p>Setup Membership</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-site-group">
-		            			<div class="inner-menu">
-			              			<p>Setup Site Group</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-site">
-		            			<div class="inner-menu">
-			              			<p>Setup Site</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-terminal">
-		            			<div class="inner-menu">
-			              			<p>Setup Terminal</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-product-group">
-		            			<div class="inner-menu">
-			              			<p>Setup Product Group</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-product">
-		            			<div class="inner-menu">
-			              			<p>Setup Product</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-product-to-gp">
-		            			<div class="inner-menu">
-			              			<p>Setup Product to Product Group Relation</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-membership-privilege">
-		            			<div class="inner-menu">
-			              			<p>Setup Membership Privilege</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-card-type">
-		            			<div class="inner-menu">
-			              			<p>Setup Card Type</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-industry-classification">
-		            			<div class="inner-menu">
-			              			<p>Setup Industry Classification</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-account-manager">
-		            			<div class="inner-menu">
-			              			<p>Setup Account Manager</p>
-		              			</div>
-		              			</a>
-					      	</div>
-		          		</li>
-		          		<li>
-		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-account">
-		              			<i class="far fa-user"></i>
-		              			<p>Account</p>
-		            		</a>
-		            		<div id="collapse-account" class="panel-collapse collapse in">
-		              			<a href="/setup-account">
-		            			<div class="inner-menu">
-			              			<p>Setup Account</p>
-		              			</div>
-		              			</a>
-		              			<a href="/register-account-to-client">
-		            			<div class="inner-menu">
-			              			<p>Register Account to Client</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-account-CP">
-		            			<div class="inner-menu">
-			              			<p>Setup Account CP</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-account-profile">
-		            			<div class="inner-menu">
-			              			<p>Setup Account Profile</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-card-profile">
-		            			<div class="inner-menu">
-			              			<p>Setup Card Profile</p>
-		              			</div>
-		              			</a>
-		              			<a href="/customize-account-privilege">
-		            			<div class="inner-menu">
-			              			<p>Customize Account Privilege</p>
-		              			</div>
-		              			</a>
-		              			<a href="/register-service">
-		            			<div class="inner-menu">
-			              			<p>Register Service</p>
-		              			</div>
-		              			</a>
-					      	</div>
-		          		</li>
-		          		<li>
-		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-sub-account">
-		              			<i class="far fa-user-circle"></i>
-		              			<p>Sub Account</p>
-		            		</a>
-		            		<div id="collapse-sub-account" class="panel-collapse collapse in">
-		              			<a href="/setup-sub-account">
-		            			<div class="inner-menu">
-			              			<p>Setup Sub Account</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-sub-account-profile">
-		            			<div class="inner-menu">
-			              			<p>Setup Sub Account Profile</p>
-		              			</div>
-		              			</a>
-		              		</div>
-		          		</li>
-		          		<li>
-		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-card-group">
-		              			<i class="fas fa-layer-group"></i>
-		              			<p>Card Group</p>
-		            		</a>
-		            		<div id="collapse-card-group" class="panel-collapse collapse in">
-		              			<a href="/setup-card-group">
-		            			<div class="inner-menu">
-			              			<p>Setup Card Group</p>
-		              			</div>
-		              			</a>
-		              			<a href="/setup-card-group-profile">
-		            			<div class="inner-menu">
-			              			<p>Setup Card Group Profile</p>
-		              			</div>
-		              			</a>
-		              		</div>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="far fa-credit-card"></i>
-		              			<p>Member Card</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="far fa-file-alt"></i>
-		              			<p>Report</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="fas fa-users-cog"></i>
-		              			<p>User Management</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="fas fa-cogs"></i>
-		              			<p>Configuration</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="fas fa-tv"></i>
-		              			<p>Monitoring</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="fas fa-mail-bulk"></i>
-		              			<p>Marketing Message</p>
-		            		</a>
-		          		</li>
-		          		<li>
-		            		<a href="#">
-		              			<i class="fas fa-file-invoice-dollar"></i>
-		              			<p>Fee</p>
-		            		</a>
-		          		</li>
 		          		<li class="active">
-		            		<a class="nav-link" href="/payment">
-		              			<i class="far fa-credit-card"></i>
-		              			<p>Payment</p>
+		            		<a href="/insight">
+		              			<i class="fas fa-chart-line"></i>
+		              			<p>Insight</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="/cashflow">
+		              			<i class="fas fa-receipt"></i>
+		              			<p>Cashflow</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse-asset">
+		              			<i class="fas fa-wallet"></i>
+		              			<p>Assets</p>
+		            		</a>
+		            		<div id="collapse-asset" class="panel-collapse collapse in">
+		              			<a href="/cash">
+		            			<div class="inner-menu">
+			              			<p>Cash</p>
+		              			</div>
+		              			</a>
+		              			<a href="/jenius-reguler">
+		            			<div class="inner-menu">
+			              			<p>Jenius Reguler</p>
+		              			</div>
+		              			</a>
+		              			<a href="/jenius-flexi-server">
+		            			<div class="inner-menu">
+			              			<p>Jenius - Flexi Server</p>
+		              			</div>
+		              			</a>
+		              			<a href="/ovo">
+		            			<div class="inner-menu">
+			              			<p>OVO</p>
+		              			</div>
+		              			</a>
+		              			<a href="/mandiri">
+		            			<div class="inner-menu">
+			              			<p>Mandiri</p>
+		              			</div>
+		              			</a>
+		              			<a href="/bni">
+		            			<div class="inner-menu">
+			              			<p>BNI</p>
+		              			</div>
+		              			</a>
+		              			<a href="/bri">
+		            			<div class="inner-menu">
+			              			<p>BRI</p>
+		              			</div>
+		              			</a>
+		              			<a href="/gold">
+		            			<div class="inner-menu">
+			              			<p>Gold</p>
+		              			</div>
+		              			</a>
+		              			<a href="/crypto">
+		            			<div class="inner-menu">
+			              			<p>Cryptocurrency</p>
+		              			</div>
+		              			</a>
+					      	</div>
+		          		</li>
+		          		<li>
+		          			<a href="/debt">
+		              			<i class="fas fa-money-check-alt"></i>
+		              			<p>Debt</p>
+		            		</a>
+		          		</li>
+		          		<li>
+		            		<a href="/finplan">
+		              			<i class="fas fa-receipt"></i>
+		              			<p>Financial Plan</p>
 		            		</a>
 		          		</li>
 		        	</ul>
@@ -221,7 +92,7 @@
 
 		    <div class="main-panel">
 		      	<!-- Navbar -->
-		      	<nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+		      	<nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent" style="position: fixed; background-color: #fff !important; opacity: .9;">
 		        	<div class="container-fluid">
 		          		<div class="navbar-wrapper">
 		            		<div class="navbar-toggle">
@@ -231,7 +102,7 @@
 				                	<span class="navbar-toggler-bar bar3"></span>
 				              	</button>
 		            		</div>
-		            		<a class="navbar-brand">Wirecard Payment</a>
+		            		<a class="navbar-brand">Buba Financial Statement Project</a>
 		          		</div>
 		          		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 				            <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -240,7 +111,7 @@
 			          	</button>
 				        <div class="collapse navbar-collapse justify-content-end" id="navigation">
 				            <form>
-				              	<div class="input-group no-border">
+				              	<div id="searchbar" class="input-group no-border">
 				                	<input type="text" value="" class="form-control" placeholder="Search...">
 				                	<div class="input-group-append">
 				                  		<div class="input-group-text">
@@ -283,6 +154,25 @@
 
 		      	<!-- Content Section -->
 		      	<div class="content">
+		        	<div class="row">
+		          		<!-- User Profile -->
+			          	<div class="col-md-12">
+			            	<div class="card card-user">
+			              		<div class="card-body">
+			                		<div class="author">
+			                  			<i class="far fa-user" style="font-size: 24px"></i>
+			                  			<h5 class="title">Mahbub Haq Al Farisi</h5>
+			                  			<p class="description">mahbub.alfarisi@wirecard.com</p>
+			                  			<a href="/user">
+				                  			<button type="submit" class="btn btn-primary btn-round">Show Profile</button>
+			                  			</a>
+			                		</div>
+			              		</div>
+			            	</div>
+			          	</div>
+		          		<!-- End of User Profile -->
+		        	</div>
+
 			        <div class="row">
 			          	<div class="col-lg-6 col-md-6 col-sm-6">
 			            	<!-- Postpaid Payment -->
@@ -342,7 +232,7 @@
 		              			<span class="copyright">©
 					                <script>
 					                  document.write(new Date().getFullYear())
-					                </script> by Wirecard Indonesia
+					                </script> Buba Financial Management Project
 		              			</span>
 		            		</div>
 		          		</div>

@@ -15,18 +15,26 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/main', function () {
-    return view('main');
+Route::get('/insight', function () {
+    return view('insight');
 });
 
-Route::get('/user', function () {
-    return view('user');
+Route::get('/debt', function () {
+    return view('debt');
 });
 
-Route::get('/payment', function () {
-    return view('payment');
+Route::get('/asset', function () {
+    return view('asset');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/finplan', function () {
+    return view('finplan');
+});
+
+Route::get('/cashflow', function () {
+    return view('cashflow');
+});
+
+Route::get('/mandiri', function () {
+    return view('mandiri');
 });
