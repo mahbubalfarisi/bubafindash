@@ -38,3 +38,7 @@ Route::get('/cashflow', function () {
 Route::get('/mandiri', function () {
     return view('mandiri');
 });
+
+Route::get('/gold', function () {
+    return view('gold');
+});

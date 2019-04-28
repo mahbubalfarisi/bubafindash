@@ -102,7 +102,7 @@
 				                	<span class="navbar-toggler-bar bar3"></span>
 				              	</button>
 		            		</div>
-		            		<a class="navbar-brand">Buba Financial Statement Project</a>
+		            		<a class="navbar-brand">Buba Financial Management Project</a>
 		          		</div>
 		          		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 				            <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -507,13 +507,13 @@
 														1836168
 													</td>
 													<td class="text-right">
-														310128
+														444928
 													</td>
 													<td>
-														0,1689
+														0,24231
 													</td>
 													<td>
-														5 days
+														7 days
 													</td>
 												</tr>
 											</tbody>
@@ -545,13 +545,13 @@
 				                    		<tbody>
 												<tr>
 													<td class="text-right">
-														1722506
+														1728061
 													</td>
 													<td class="text-right">
 														4425000
 													</td>
 													<td>
-														257%
+														256%
 													</td>
 													<td>
 														Warning
@@ -586,13 +586,13 @@
 				                    		<tbody>
 												<tr>
 													<td class="text-right">
-														-4114872
+														-3980072
 													</td>
 													<td class="text-right">
-														310128
+														444928
 													</td>
 													<td>
-														-1327%
+														-895%
 													</td>
 													<td>
 														Warning

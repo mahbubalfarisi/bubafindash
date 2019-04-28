@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Wirecard Payment">
 	@extends('insight-layout')
-  	<title>Cashflow</title>
+  	<title>Gold</title>
 	<body>
 		<div class="wrapper ">
 		    <div class="sidebar" style="margin-top: 63px;" data-color="white" data-active-color="danger">
@@ -26,7 +26,7 @@
 		              			<i class="fas fa-wallet"></i>
 		              			<p>Assets</p>
 		            		</a>
-		            		<div id="collapse-asset" class="panel-collapse collapse in">
+		            		<div id="collapse-asset" class="panel-collapse collapse">
 		              			<a href="/cash">
 		            			<div class="inner-menu">
 			              			<p>Cash</p>
@@ -80,7 +80,7 @@
 		              			<p>Debt</p>
 		            		</a>
 		          		</li>
-		          		<li class="active">
+		          		<li>
 		            		<a href="/finplan">
 		              			<i class="fas fa-receipt"></i>
 		              			<p>Financial Plan</p>
@@ -153,53 +153,191 @@
 		      	<!-- End of Navbar -->
 
 		      	<!-- Content Section -->
-		      	<div class="content">
+				<div class="content">
 			        <div class="row">
-			          	<div class="col-lg-6 col-md-6 col-sm-6">
-			            	<!-- Postpaid Payment -->
-			            	<a href="#" style="text-decoration: none;">
-				              	<div class="card card-stats">
-				                	<div class="card-body ">
-				                  		<div class="row">
-				                    		<div class="col-5 col-md-4">
-				                      			<div class="icon-big text-center icon-warning">
-				                        			<i class="fas fa-tags"></i>
-				                      			</div>
-				                    		</div>
-				                    		<div class="col-7 col-md-8">
-				                      			<div class="numbers">
-							                        <p class="card-category">Payment</p>
-							                        <p class="card-title">Postpaid</p>
-				                      			</div>
-				                    		</div>
-				                  		</div>
+			          	<div class="col-md-8">
+			            	<div class="card">
+			              		<div class="card-header">
+			                		<h4 class="card-title">Tokopedia Gold</h4>
+			              		</div>
+			              		<div class="card-body">
+			                		<div class="table-responsive">
+			                  			<table class="table">
+			                    			<thead class=" text-primary">
+						                      	<th>
+						                        	Date
+						                      	</th>
+					                      		<th>
+					                        		Description
+					                      		</th>
+					                      		<th class="text-right">
+					                        		Deposit (Rp)
+						                      	</th>
+						                      	<th class="text-right">
+						                        	Withdrawal (Rp)
+						                      	</th>
+						                      	<th class="text-right">
+						                        	Balance (gr)
+						                      	</th>
+					                    	</thead>
+				                    		<tbody>
+												<tr>
+													<td>
+														07/22/2018
+													</td>
+													<td>
+														Buy
+													</td>
+													<td class="text-right">
+														75000
+													</td>
+													<td class="text-right">
+														-
+													</td>
+													<td class="text-right">
+														0.126
+													</td>
+												</tr>
+					                    	</tbody>
+				                  		</table>
 				                	</div>
-				              	</div>
-				            </a>
-				            <!-- End of Postpaid Payment -->
+			              		</div>
+			            	</div>
+			            	<div class="card">
+			              		<div class="card-header">
+			                		<h4 class="card-title">Bukalapak Gold</h4>
+			              		</div>
+			              		<div class="card-body">
+			                		<div class="table-responsive">
+			                  			<table class="table">
+			                    			<thead class=" text-primary">
+						                      	<th>
+						                        	Date
+						                      	</th>
+					                      		<th>
+					                        		Description
+					                      		</th>
+					                      		<th class="text-right">
+					                        		Deposit (Rp)
+						                      	</th>
+						                      	<th class="text-right">
+						                        	Withdrawal (Rp)
+						                      	</th>
+						                      	<th class="text-right">
+						                        	Balance (gr)
+						                      	</th>
+					                    	</thead>
+				                    		<tbody>
+												<tr>
+													<td>
+														03/16/2018
+													</td>
+													<td>
+														Buy
+													</td>
+													<td class="text-right">
+														97187
+													</td>
+													<td class="text-right">
+														-
+													</td>
+													<td class="text-right">
+														0.16
+													</td>
+												</tr>
+												<tr>
+													<td>
+														03/22/2018
+													</td>
+													<td>
+														Buy
+													</td>
+													<td class="text-right">
+														36779
+													</td>
+													<td class="text-right">
+														-
+													</td>
+													<td class="text-right">
+														0.059
+													</td>
+												</tr>
+					                    	</tbody>
+				                  		</table>
+				                	</div>
+			              		</div>
+			            	</div>
 			          	</div>
-			          	<div class="col-lg-6 col-md-6 col-sm-6">
-				            <!-- Prepaid Payment -->
-				            <a href="#" style="text-decoration: none;">
-				              	<div class="card card-stats">
-					                <div class="card-body ">
-					                  	<div class="row">
-					                    	<div class="col-5 col-md-4">
-					                      		<div class="icon-big text-center icon-warning">
-					                        		<i class="far fa-credit-card"></i>
-					                      		</div>
-					                    	</div>
-					                    	<div class="col-7 col-md-8">
-					                      		<div class="numbers">
-					                        		<p class="card-category">Payment</p>
-					                        		<p class="card-title">Prepaid</p>
-					                      		</div>
-					                    	</div>
-					                  	</div>
-					                </div>
-				              	</div>
-				            </a>
-				            <!-- End of Prepaid Payment -->
+			          	<div class="col-md-4">
+			          		<div class="card">
+			              		<div class="card-header">
+			                		<h4 class="card-title">Summary</h4>
+			              		</div>
+			              		<div class="card-body">
+			                		<div class="table-responsive">
+			                  			<table class="table">
+			                    			<thead class=" text-primary">
+						                      	<th>
+						                        	Total Gold (gr)
+						                      	</th>
+						                      	<th>
+						                        	Total Value (Rp)
+						                      	</th>
+					                    	</thead>
+				                    		<tbody>
+												<tr>
+													<td class="text-right">
+														0.435
+													</td>
+													<td class="text-right">
+														205486
+													</td>
+												</tr>
+											</tbody>
+										</table>
+			                  			<table class="table">
+			                    			<thead class=" text-primary">
+						                      	<th>
+						                        	Tokopedia Gold (gr)
+						                      	</th>
+						                      	<th>
+						                        	Tokopedia Value (Rp)
+						                      	</th>
+					                    	</thead>
+				                    		<tbody>
+												<tr>
+													<td class="text-right">
+														0.216
+													</td>
+													<td class="text-right">
+														74962
+													</td>
+												</tr>
+											</tbody>
+										</table>
+			                  			<table class="table">
+			                    			<thead class=" text-primary">
+						                      	<th>
+						                        	Bukalapak Gold (gr)
+						                      	</th>
+						                      	<th>
+						                        	Bukalapak Value (Rp)
+						                      	</th>
+					                    	</thead>
+				                    		<tbody>
+												<tr>
+													<td class="text-right">
+														0.219
+													</td>
+													<td class="text-right">
+														130524
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
 			          	</div>
 			        </div>
 		      	</div>

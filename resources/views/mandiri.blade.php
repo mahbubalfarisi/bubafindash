@@ -102,7 +102,7 @@
 				                	<span class="navbar-toggler-bar bar3"></span>
 				              	</button>
 		            		</div>
-		            		<a class="navbar-brand">Buba Financial Statement Project</a>
+		            		<a class="navbar-brand">Buba Financial Management Project</a>
 		          		</div>
 		          		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 				            <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -183,24 +183,24 @@
 				                    		<tbody>
 												<tr>
 													<td>
-														04/29/2019
+														04/28/2019
 													</td>
 													<td>
-														Deposit from Ibu
+														Deposit from Ibu & Mbah
 													</td>
 													<td class="text-right">
-														100000
+														200000
 													</td>
 													<td class="text-right">
 														-
 													</td>
 													<td class="text-right">
-														100000
+														200000
 													</td>
 												</tr>
 												<tr>
 													<td>
-														04/29/2019
+														04/28/2019
 													</td>
 													<td>
 														Withdrawal
@@ -209,10 +209,10 @@
 														-
 													</td>
 													<td class="text-right">
-														50000
+														100000
 													</td>
 													<td class="text-right">
-														50000
+														100000
 													</td>
 												</tr>
 												<tr>
@@ -229,7 +229,7 @@
 														-
 													</td>
 													<td class="text-right">
-														3050000
+														3100000
 													</td>
 												</tr>
 					                    	</tbody>
@@ -260,13 +260,13 @@
 				                    		<tbody>
 												<tr>
 													<td class="text-right">
+														3200000
+													</td>
+													<td class="text-right">
+														100000
+													</td>
+													<td class="text-right">
 														3100000
-													</td>
-													<td class="text-right">
-														50000
-													</td>
-													<td class="text-right">
-														3050000
 													</td>
 												</tr>
 											</tbody>
