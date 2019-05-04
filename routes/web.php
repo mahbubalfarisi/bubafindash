@@ -42,3 +42,5 @@ Route::get('/mandiri', function () {
 Route::get('/gold', function () {
     return view('gold');
 });
+
+Route::resource('debts', 'DebtController');
