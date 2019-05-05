@@ -31,19 +31,53 @@
 		                        		Creditor
 		                      		</th>
 		                      		<th class="text-right">
-		                        		Amount (Rp)
+		                        		Amount
 			                      	</th>
 			                      	<th class="text-right">
-			                        	Remaining (Rp)
+			                        	Remaining
 			                      	</th>
 		                    	</thead>
-	                    		<tbody>   			
+	                    		<tbody>
+	                    			<?php
+	                    				$totalamount = '0';
+	                    				$totalremaining = '0';
+                    				?>
 							        @foreach($debts as $debt)
+	                    			<!-- Amount Formatter -->
+	                    			<?php
+	                    				$amount = $debt->amount;
+	                    				if (strlen($amount) < 4) {
+	                    					$amount = mb_substr($debt->amount, -3);
+	                    				}
+	                    				else if (strlen($amount) > 3 && strlen($amount) < 7) {
+	                    					$amount = '.'.mb_substr($debt->amount, -6, -3).'.'.mb_substr($debt->amount, -3);
+	                    				}
+	                    				else if (strlen($amount) > 6 && strlen($amount) < 10) {
+	                    					$amount = '.'.mb_substr($debt->amount, -9, -6).'.'.mb_substr($debt->amount, -6, -3).'.'.mb_substr($debt->amount, -3);
+	                    				}
+	                    			?>
+	                    			<!-- Remaining Formatter -->
+	                    			<?php
+	                    				$remaining = $debt->remaining;
+	                    				if (strlen($remaining) < 4) {
+	                    					$remaining = mb_substr($debt->remaining, -3);
+	                    				}
+	                    				else if (strlen($remaining) > 3 && strlen($remaining) < 7) {
+	                    					$remaining = '.'.mb_substr($debt->remaining, -6, -3).'.'.mb_substr($debt->remaining, -3);
+	                    				}
+	                    				else if (strlen($remaining) > 6 && strlen($remaining) < 10) {
+	                    					$remaining = '.'.mb_substr($debt->remaining, -9, -6).'.'.mb_substr($debt->remaining, -6, -3).'.'.mb_substr($debt->remaining, -3);
+	                    				}
+	                    			?>
+	                    			<?php
+	                    				$totalamount = $totalamount + $debt->amount;
+	                    				$totalremaining = $totalremaining + $debt->remaining;
+	                    			?>
 							        <tr>
 							            <td>{{$debt->purpose}}</td>
 							            <td>{{$debt->creditor}}</td>
-							            <td class="text-right">{{$debt->amount}}</td>
-							            <td class="text-right">{{$debt->remaining}}</td>
+							            <td class="text-right">{{'Rp'.$amount}}</td>
+							            <td class="text-right">{{'Rp'.$remaining}}</td>
 							            <td>
 						            		<a href="{{ route('debts.edit',$debt->id)}}">
 							            		<button class="btn btn-primary">
@@ -63,6 +97,18 @@
 							        </tr>
 							        @endforeach
 		                    	</tbody>
+		                    	<tfoot>
+			                      	<th></th>
+		                      		<th>
+		                        		Total
+		                      		</th>
+		                      		<th class="text-right">
+		                      			{{'Rp'.$totalamount}}
+			                      	</th>
+			                      	<th class="text-right">
+		                      			{{'Rp'.$totalremaining}}
+			                      	</th>
+		                    	</tfoot>
 	                  		</table><br/>
 	                	</div>
               		</div>

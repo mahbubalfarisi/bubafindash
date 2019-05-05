@@ -111,7 +111,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="/debts">
                                 <i class="fas fa-money-check-alt"></i>
                                 <p>Debt</p>
