@@ -183,7 +183,7 @@
 			      			</div>
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
-									<p class="card-category">Average Monthly Expenditure</p>
+									<p class="card-category">Average Expenditure</p>
 									<p class="text-right">{{'Rp'.$totaldebt}}</p>
 			        			</div>
 			      			</div>
