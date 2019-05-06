@@ -2296,11 +2296,7 @@ input,
 optgroup,
 select,
 textarea {
-<<<<<<< HEAD
   font-family: "Helvetica Neue", "Montserrat", Arial, sans-serif;
-=======
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
->>>>>>> 72b6ca91313d07736e1924278ef2e25dc5fe01fd
 }
 
 h1,
@@ -2520,11 +2516,7 @@ a.text-gray:hover {
 body {
   color: #2c2c2c;
   font-size: 14px;
-<<<<<<< HEAD
   font-family: "Helvetica Neue", "Montserrat", Arial, sans-serif;
-=======
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
->>>>>>> 72b6ca91313d07736e1924278ef2e25dc5fe01fd
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -5830,24 +5822,14 @@ License - nucleoapp.com/license/
   padding: 15px 15px;
 }
 
-<<<<<<< HEAD
 .card-stats:hover {
   -webkit-box-shadow: 1px 12px 12px 12px rgba(0, 0, 0, 0.125);
   box-shadow: 1px 12px 12px 12px rgba(0, 0, 0, 0.125);
-=======
-.card-stats .card-body:hover {
-  -webkit-box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, 0.125);
-  box-shadow: 1px 2px 7px 1px rgba(0, 0, 0, 0.125);
->>>>>>> 72b6ca91313d07736e1924278ef2e25dc5fe01fd
 }
 
 .card-stats .card-body .numbers {
   text-align: right;
-<<<<<<< HEAD
   font-size: 1.5em;
-=======
-  font-size: 2em;
->>>>>>> 72b6ca91313d07736e1924278ef2e25dc5fe01fd
   padding: 0 1em;
 }
 

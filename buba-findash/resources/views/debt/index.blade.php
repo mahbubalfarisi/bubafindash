@@ -123,35 +123,20 @@
                 		<div class="table-responsive">
                   			<table class="table">
                     			<thead class=" text-primary">
-<<<<<<< HEAD
 			                      	<th class="text-center">
 			                        	Debt Amount (Rp)
 			                      	</th>
 			                      	<th class="text-center">
-=======
-			                      	<th>
-			                        	Debt Amount (Rp)
-			                      	</th>
-			                      	<th>
->>>>>>> 72b6ca91313d07736e1924278ef2e25dc5fe01fd
 			                        	Remaining Debt (Rp)
 			                      	</th>
 		                    	</thead>
 	                    		<tbody>
 									<tr>
-<<<<<<< HEAD
 										<td class="text-center">
 		                      				{{'Rp'.$totalamount}}
 										</td>
 										<td class="text-center">
 		                      				{{'Rp'.$totalremaining}}
-=======
-										<td class="text-right">
-											4450000
-										</td>
-										<td class="text-right">
-											4425000
->>>>>>> 72b6ca91313d07736e1924278ef2e25dc5fe01fd
 										</td>
 									</tr>
 								</tbody>

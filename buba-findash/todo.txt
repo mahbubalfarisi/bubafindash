@@ -1,0 +1,14 @@
+liquid balance v
+remaining debt v
+liquidity ratio v
+average monthly expenditure
+days remaining (ratio*30) v
+
+average monthly income
+debt ratio v
+debt status
+
+solvency ratio v
+net asset v
+total asset v
+solvency status
