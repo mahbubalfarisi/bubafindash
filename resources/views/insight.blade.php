@@ -5,6 +5,8 @@
 	<?php
 		$totaldebt = '0';
 		$debts = DB::select('SELECT * FROM debts');
+		$debtratio = '0';
+		$avgmonthincome = '5500000';
 	?>
     @foreach($debts as $debt)
 		<?php
@@ -239,7 +241,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Average Monthly Income</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="text-right">{{'Rp1728061'}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -264,7 +266,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Average Expenditure</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="text-right">{{'Rp1836168'}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -318,8 +320,11 @@
 			      			</div>
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
+								    <?php
+										$debtratio = $totaldebt / $avgmonthincome * 100;
+									?>
 									<p class="card-category">Debt Ratio</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="text-right">{{number_format($debtratio, 4).'%'}}</p>
 			        			</div>
 			      			</div>
 			    		</div>

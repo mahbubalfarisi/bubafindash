@@ -12,3 +12,10 @@ solvency ratio v
 net asset v
 total asset v
 solvency status
+
+current ratio (liquid/short term liabilities)
+short term liabilities (cicilan)
+
+monthly surplus
+monthly income
+saving ratio (monthly surplus/monthly income) (money management skills)
