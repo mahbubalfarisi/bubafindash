@@ -5,7 +5,7 @@ average monthly expenditure v
 days remaining (ratio*30) v
 
 average monthly income v
-debt ratio v
+debt ratio v (<20 ideal, 20-36 aman, 37-42 warning, 43-50)
 debt status
 
 solvency ratio v
