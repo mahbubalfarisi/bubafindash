@@ -1,10 +1,10 @@
 liquid balance v
 remaining debt v
 liquidity ratio v
-average monthly expenditure
+average monthly expenditure v
 days remaining (ratio*30) v
 
-average monthly income
+average monthly income v
 debt ratio v
 debt status
 
