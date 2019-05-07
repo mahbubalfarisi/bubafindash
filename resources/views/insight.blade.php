@@ -6,13 +6,15 @@
 		$totaldebt = '0';
 		$debts = DB::select('SELECT * FROM debts');
 		$debtratio = '0';
-		$avgmonthincome = '5500000';
+		$avgmonthincome = '7500000';
+		$debtratiostatus = 'Good';
+		$liquidasset = '444928';
+		$totalasset = '0';
+
 	?>
     @foreach($debts as $debt)
 		<?php
 			$amount = $debt->amount;
-		?>
-		<?php
 			$totaldebt = $totaldebt + $debt->amount;
 		?>
     @endforeach
@@ -166,7 +168,10 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Net Asset</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<?php
+										$netasset = $totalasset - $totaldebt;
+									?>
+									<p class="text-right">{{'Rp'.$netasset}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -216,7 +221,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Liquidity - Remaining Day</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="text-right">{{'Rp'.$liquidasset}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -322,9 +327,26 @@
 			        			<div class="numbers">
 								    <?php
 										$debtratio = $totaldebt / $avgmonthincome * 100;
+
+										if ($debtratio < 20) {
+											$debtratiostatus = 'Ideal';
+										}
+										elseif ($debtratio >= 20 && $debtratio <= 36) {
+											$debtratiostatus = 'Good';
+										}
+										elseif ($debtratio >= 37 && $debtratio <= 42) {
+											$debtratiostatus = 'Warning';
+										}
+										elseif ($debtratio >= 43 && $debtratio <= 49) {
+											$debtratiostatus = 'Danger';
+										}
+										elseif ($debtratio >= 50) {
+											$debtratiostatus = 'Catasthropic';
+										}
 									?>
 									<p class="card-category">Debt Ratio</p>
-									<p class="text-right">{{number_format($debtratio, 4).'%'}}</p>
+									<p class="text-right">{{ceil($debtratio).'%'}}</p>
+									<p class="card-category">{{$debtratiostatus}}</p>
 			        			</div>
 			      			</div>
 			    		</div>

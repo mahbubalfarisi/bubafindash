@@ -14,8 +14,14 @@ total asset v
 solvency status
 
 current ratio (liquid/short term liabilities)
-short term liabilities (cicilan)
+short term liabilities (monthly)
 
 monthly surplus
 monthly income
 saving ratio (monthly surplus/monthly income) (money management skills)
+
+
+Liabilities
+- Household
+- Transport
+- Cicilan Pinjaman
