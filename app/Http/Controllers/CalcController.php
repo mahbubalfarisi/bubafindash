@@ -65,13 +65,79 @@ class CalcController extends Controller
 
         return $liqratio;
     }
-    
+
+    public function daytoliquid ()
+    {
+        $liqratio_dtl = $this->liquidityratio();
+
+        $daytoliquid = $liqratio_dtl / 100 * 30;
+
+        return $daytoliquid;
+    }
+
+    public function liqratiostatus()
+    {
+        $liqratio_lrs = $this->liquidityratio();
+        $liqratiostatus = 'Not Ideal';
+
+        if ($liqratio_lrs > 2 && $liqratio_lrs < 7) {
+            $liqratiostatus = 'Ideal';
+        }
+        elseif ($liqratio_lrs > 6) {
+            $liqratiostatus = 'Good but Not Recommended';
+        }
+        elseif ($liqratio_lrs < 3) {
+            $liqratiostatus = 'Not Ideal';
+        }
+
+        return $liqratiostatus;
+    }
+
+    public function dayliqsuggest()
+    {
+        $liqratio_dls = $this->liquidityratio();
+        $liqsuggest = 'Not Ideal';
+
+        if ($liqratio_dls > 2 && $liqratio_dls < 7) {
+            $liqsuggest = 'Keep this condition';
+        }
+        elseif ($liqratio_dls > 6) {
+            $liqsuggest = 'Put some of your assets to non-liquid one';
+        }
+        elseif ($liqratio_dls < 3) {
+            $liqsuggest = 'Increase your liquid assets';
+        }
+
+        return $liqsuggest;
+    }
+
+    public function totalasset ()
+    {
+        $totalasset = '0';
+
+        return $totalasset;
+    }
+
+    public function netasset ()
+    {
+        $totalasset_na = $this->totalasset();
+        $totaldebt_na = $this->sumdebt();
+        $netasset = $totalasset_na - $totaldebt_na;
+
+        return $netasset;
+    }
+
     public function insightview ()
     {
         $totaldebtsd = $this->sumdebt();
         $debtratio = $this->debtratio();
         $debtratiostatus = $this->debtratiostatus();
         $liqratio = $this->liquidityratio();
-        return view('insight')->with(['totaldebt' => $totaldebtsd, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio]);
+        $daytoliquid = $this->daytoliquid();
+        $liqratiostatus = $this->liqratiostatus();
+        $liqsuggest = $this->dayliqsuggest();
+        $totalasset = $this->totalasset();
+        $netasset = $this->netasset();
+        return view('insight')->with(['totaldebt' => $totaldebtsd, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset]);
     }
 }
