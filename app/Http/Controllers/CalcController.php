@@ -20,6 +20,19 @@ class CalcController extends Controller
         return $totaldebt;
     }
 
+    public function remainingdebt ()
+    {
+        $remain = Debt::all();
+        $remainingdebt = '0';
+
+        foreach ($remain as $remaining) {
+            $remains = $remaining->remaining;
+            $remainingdebt = $remainingdebt + $remaining->remaining;
+        }
+
+        return $remainingdebt;
+    }
+
     public function debtratio ()
     {
         $totaldebt_dr = $this->sumdebt();
@@ -130,6 +143,7 @@ class CalcController extends Controller
     public function insightview ()
     {
         $totaldebtsd = $this->sumdebt();
+        $remainingdebt = $this->remainingdebt();
         $debtratio = $this->debtratio();
         $debtratiostatus = $this->debtratiostatus();
         $liqratio = $this->liquidityratio();
@@ -138,6 +152,6 @@ class CalcController extends Controller
         $liqsuggest = $this->dayliqsuggest();
         $totalasset = $this->totalasset();
         $netasset = $this->netasset();
-        return view('insight')->with(['totaldebt' => $totaldebtsd, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset]);
+        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset]);
     }
 }

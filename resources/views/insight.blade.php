@@ -189,7 +189,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Remaining Debt</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="text-right">{{'Rp'.$remainingdebt}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -198,31 +198,6 @@
 			    		<hr>
 			    		<div class="stats">
 	          				<i class="fas fa-calendar-day"></i> Last day
-			    		</div>
-			  		</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="card card-stats">
-			  		<div class="card-body ">
-			    		<div class="row">
-			      			<div class="col-5 col-md-4">
-			        			<div class="icon-big text-center icon-warning">
-			          				<i class="fas fa-calendar-day"></i>
-			        			</div>
-			      			</div>
-			      			<div class="col-7 col-md-8">
-			        			<div class="numbers">
-									<p class="card-category">Liquidity - Remaining Day</p>
-									<p class="text-right">{{'Rp'.$liquidasset}}</p>
-			        			</div>
-			      			</div>
-			    		</div>
-			  		</div>
-			  		<div class="card-footer ">
-			    		<hr>
-			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
 			    		</div>
 			  		</div>
 				</div>
