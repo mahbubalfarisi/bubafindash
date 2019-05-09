@@ -38,7 +38,7 @@ class CalcController extends Controller
         $totaldebt_dr = $this->sumdebt();
         
         $debtratio = '0';
-        $avgmonthincome = '7500000';
+        $avgmonthincome = '5500000';
 
         $debtratio = $totaldebt_dr / $avgmonthincome * 100;
 

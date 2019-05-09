@@ -15,11 +15,6 @@ Route::get('/', function () {
     return view('login');
 });
 
-
-Route::get('/debt', function () {
-    return view('debt');
-});
-
 Route::get('/asset', function () {
     return view('asset');
 });
@@ -32,10 +27,6 @@ Route::get('/cashflow', function () {
     return view('cashflow');
 });
 
-Route::get('/mandiri', function () {
-    return view('mandiri');
-});
-
 Route::get('/gold', function () {
     return view('gold');
 });
@@ -43,3 +34,4 @@ Route::get('/gold', function () {
 Route::get('/insight', ['uses' => 'CalcController@insightview']);
 
 Route::resource('debts', 'DebtController');
+Route::resource('mandiri', 'MandiriController');

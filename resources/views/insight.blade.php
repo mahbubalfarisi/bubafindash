@@ -1,12 +1,7 @@
 @extends('insight-layout')
 <title>Insight</title>
 @section('content')
-  	<!-- Content Section -->  	
-	<?php
-		$debts = DB::select('SELECT * FROM debts');
-		$totalasset = '0';
-        $liquidasset = '444928';
-	?>
+  	<!-- Content Section -->
 	<div class="content">
         <div class="row">
         	<h3>Insight</h3>
@@ -60,7 +55,7 @@
 			      			</div>
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
-									<p class="card-category">Debt Ratio</p>
+									<p class="card-category">Debt to Asset Ratio</p>
 									<p class="text-right">{{ceil($debtratio).'%'}}</p>
 									<p class="card-category">{{$debtratiostatus}}</p>
 			        			</div>
