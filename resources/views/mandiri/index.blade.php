@@ -83,13 +83,13 @@
                   			<table class="table">
                     			<thead class=" text-primary">
 			                      	<th>
-			                        	April Income (Rp)
+			                        	Total Credit
 			                      	</th>
 			                      	<th>
-			                        	April Expenditure (Rp)
+			                        	Total Debit
 			                      	</th>
 			                      	<th>
-			                        	April Balance (Rp)
+			                        	Balance
 			                      	</th>
 		                    	</thead>
 	                    		<tbody>
