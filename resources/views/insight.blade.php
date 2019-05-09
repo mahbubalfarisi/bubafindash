@@ -89,8 +89,16 @@
 									<p class="card-category">Solvency Ratio</p>
 									<p class="text-right">{{ceil($solvencyratio).'%'}}</p>
 									<p class="card-category">{{$solvencyratiostatus}}</p>
+									<br/>
+									<br/>
 			        			</div>
 			      			</div>
+			    		</div>
+			    		<div class="row">
+			      			<div class="col-12 col-md-12">			      				
+								<p class="card-category">{{"You ".$srsdesc." using your current assets."}}</p>
+								<strong><p>{{'Suggestion: '. $srsuggest}}</p></strong>
+							</div>
 			    		</div>
 			  		</div>
 			  		<div class="card-footer ">

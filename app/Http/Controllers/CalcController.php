@@ -170,6 +170,48 @@ class CalcController extends Controller
         return $solvencyratiostatus;
     }
 
+    public function srsdesc()
+    {
+        $solvencyratio_srs = $this->solvencyratio();
+        $srsdesc = 'Good';
+
+        if ($solvencyratio_srs > 20) {
+            $srsdesc = 'can pay all of your debts at once confidently';
+        }
+        elseif ($solvencyratio_srs >= 10 && $solvencyratio_srs <= 20) {
+            $srsdesc = 'can pay all of your debts at once with caution';
+        }
+        elseif ($solvencyratio_srs >= 0 && $solvencyratio_srs <= 10) {
+            $srsdesc = 'have to think twice before paying all of your debts at once';
+        }
+        elseif ($solvencyratio_srs < 0) {
+            $srsdesc = 'absolutely can\'t pay all of your debts at once';
+        }
+
+        return $srsdesc;
+    }
+
+    public function srsuggest()
+    {
+        $solvencyratio_srsug = $this->solvencyratio();
+        $srsuggest = 'Suggest';
+
+        if ($solvencyratio_srsug > 20) {
+            $srsuggest = 'Just pay all your debts if you want.';
+        }
+        elseif ($solvencyratio_srsug >= 10 && $solvencyratio_srsug <= 20) {
+            $srsuggest = 'Just pay some of your debts at once if you want.';
+        }
+        elseif ($solvencyratio_srsug >= 0 && $solvencyratio_srsug <= 10) {
+            $srsuggest = 'Keep paying your debts one by one';
+        }
+        elseif ($solvencyratio_srsug < 0) {
+            $srsuggest = 'You have to increase your assets immediately!';
+        }
+
+        return $srsuggest;
+    }
+
     public function insightview ()
     {
         $totaldebtsd = $this->sumdebt();
@@ -184,6 +226,8 @@ class CalcController extends Controller
         $netasset = $this->netasset();
         $solvencyratio = $this->solvencyratio();
         $solvencyratiostatus = $this->solvencyratiostatus();
-        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset, 'solvencyratio' => $solvencyratio, 'solvencyratiostatus' => $solvencyratiostatus]);
+        $srsdesc = $this->srsdesc();
+        $srsuggest = $this->srsuggest();
+        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset, 'solvencyratio' => $solvencyratio, 'solvencyratiostatus' => $solvencyratiostatus, 'srsdesc' => $srsdesc, 'srsuggest' => $srsuggest]);
     }
 }
