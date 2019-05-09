@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/insight', function () {
-    return view('insight');
-});
 
 Route::get('/debt', function () {
     return view('debt');
@@ -42,5 +39,7 @@ Route::get('/mandiri', function () {
 Route::get('/gold', function () {
     return view('gold');
 });
+
+Route::get('/insight', ['uses' => 'CalcController@insightview']);
 
 Route::resource('debts', 'DebtController');
