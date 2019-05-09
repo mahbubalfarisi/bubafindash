@@ -28,18 +28,21 @@
 			        			<div class="numbers">
 									<p class="card-category">Liquidity Ratio</p>
 									<p class="text-right">{{ceil($liquidityratio).'%'}}</p>
+									<p class="card-category">{{$liqratiostatus}}</p>
+									<br/>
+									<br/>
 			        			</div>
 			      			</div>
 			    		</div>
 			    		<div class="row">
 			      			<div class="col-12 col-md-12">			      				
 								<p class="card-category">{{'You have liquid assets to meet your household expenses for '.ceil($daytoliquid).' months.'}}</p>
-								<p class="card-category">{{$liqratiostatus}}</p>
 								<strong><p>{{'Suggestion: '. $liqsuggest}}</p></strong>
 							</div>
 			    		</div>
 			  		</div>
 			  		<div class="card-footer ">
+			    		<hr>
 			    		<div class="stats">
 			      			<i class="fas fa-calendar-day"></i> Last day
 			    		</div>
@@ -84,7 +87,8 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Solvency Ratio</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="text-right">{{ceil($solvencyratio).'%'}}</p>
+									<p class="card-category">{{$solvencyratiostatus}}</p>
 			        			</div>
 			      			</div>
 			    		</div>

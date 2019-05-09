@@ -126,7 +126,7 @@ class CalcController extends Controller
 
     public function totalasset ()
     {
-        $totalasset = '0';
+        $totalasset = '371221';
 
         return $totalasset;
     }
@@ -138,6 +138,36 @@ class CalcController extends Controller
         $netasset = $totalasset_na - $totaldebt_na;
 
         return $netasset;
+    }
+
+    public function solvencyratio ()
+    {
+        $netasset_sr = $this->netasset();
+        $totalasset_sr = $this->totalasset();
+        $solvencyratio = $netasset_sr / $totalasset_sr * 100;
+
+        return $solvencyratio;
+    }
+
+    public function solvencyratiostatus()
+    {
+        $solvencyratio_srs = $this->solvencyratio();
+        $solvencyratiostatus = 'Good';
+
+        if ($solvencyratio_srs > 20) {
+            $solvencyratiostatus = 'Ideal';
+        }
+        elseif ($solvencyratio_srs >= 10 && $solvencyratio_srs <= 20) {
+            $solvencyratiostatus = 'Warning';
+        }
+        elseif ($solvencyratio_srs >= 0 && $solvencyratio_srs <= 10) {
+            $solvencyratiostatus = 'Danger';
+        }
+        elseif ($solvencyratio_srs < 0) {
+            $solvencyratiostatus = 'Catasthropic';
+        }
+
+        return $solvencyratiostatus;
     }
 
     public function insightview ()
@@ -152,6 +182,8 @@ class CalcController extends Controller
         $liqsuggest = $this->dayliqsuggest();
         $totalasset = $this->totalasset();
         $netasset = $this->netasset();
-        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset]);
+        $solvencyratio = $this->solvencyratio();
+        $solvencyratiostatus = $this->solvencyratiostatus();
+        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset, 'solvencyratio' => $solvencyratio, 'solvencyratiostatus' => $solvencyratiostatus]);
     }
 }
