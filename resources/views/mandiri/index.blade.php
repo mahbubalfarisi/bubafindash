@@ -82,13 +82,13 @@
                 		<div class="table-responsive">
                   			<table class="table">
                     			<thead class=" text-primary">
-			                      	<th>
+			                      	<th class="text-center">
 			                        	Total Credit
 			                      	</th>
-			                      	<th>
+			                      	<th class="text-center">
 			                        	Total Debit
 			                      	</th>
-			                      	<th>
+			                      	<th class="text-center">
 			                        	Balance
 			                      	</th>
 		                    	</thead>

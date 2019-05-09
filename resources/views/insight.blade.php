@@ -31,7 +31,7 @@
 			    		</div>
 			    		<div class="row">
 			      			<div class="col-12 col-md-12">			      				
-								<p class="card-category">{{'You have liquid assets to meet your household expenses for '.ceil($daytoliquid).' months.'}}</p>
+								<p class="card-category">{{'You have liquid assets to meet your household expenses for '.ceil($daytoliquid).' days.'}}</p>
 								<strong><p>{{'Suggestion: '. $liqsuggest}}</p></strong>
 							</div>
 			    		</div>

@@ -111,14 +111,14 @@ class CalcController extends Controller
         $liqratio_dls = $this->liquidityratio();
         $liqsuggest = 'Not Ideal';
 
-        if ($liqratio_dls > 2 && $liqratio_dls < 7) {
+        if ($liqratio_dls > 30) {
             $liqsuggest = 'Keep this condition';
         }
-        elseif ($liqratio_dls > 6) {
-            $liqsuggest = 'Put some of your assets to non-liquid one';
+        elseif ($liqratio_dls > 20 && $liqratio_dls <= 30) {
+            $liqsuggest = 'Don\'t buy items or foods that are not needed';
         }
-        elseif ($liqratio_dls < 3) {
-            $liqsuggest = 'Increase your liquid assets';
+        elseif ($liqratio_dls <= 20) {
+            $liqsuggest = 'You have to increase your liquid assets immediately';
         }
 
         return $liqsuggest;
