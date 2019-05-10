@@ -82,7 +82,7 @@ class CalcController extends Controller
     public function liquidityratio ()
     { 
         $dayliquid = $this->daytoliquid();
-        $liqratio = $dayliquid * 100 / 30 ;
+        $liqratio = $dayliquid * 100 / 180 ;
 
         return $liqratio;
     }
@@ -92,14 +92,14 @@ class CalcController extends Controller
         $liqratio_lrs = $this->liquidityratio();
         $liqratiostatus = 'Not Ideal';
 
-        if ($liqratio_lrs > 2 && $liqratio_lrs < 7) {
+        if ($liqratio_lrs >= 50 && $liqratio_lrs < 100) {
             $liqratiostatus = 'Ideal';
         }
-        elseif ($liqratio_lrs > 6) {
+        elseif ($liqratio_lrs >= 17 && $liqratio_lrs < 50) {
             $liqratiostatus = 'Good but Not Recommended';
         }
-        elseif ($liqratio_lrs < 3) {
-            $liqratiostatus = 'Not Ideal';
+        elseif ($liqratio_lrs < 17) {
+            $liqratiostatus = 'Warning';
         }
 
         return $liqratiostatus;
@@ -110,14 +110,14 @@ class CalcController extends Controller
         $liqratio_dls = $this->liquidityratio();
         $liqsuggest = 'Not Ideal';
 
-        if ($liqratio_dls > 2 && $liqratio_dls < 7) {
+        if ($liqratio_dls >= 50 && $liqratio_dls < 100) {
             $liqsuggest = 'Keep this condition';
         }
-        elseif ($liqratio_dls > 6) {
-            $liqsuggest = 'Put some of your assets to non-liquid one';
+        elseif ($liqratio_dls >= 17 && $liqratio_dls < 50) {
+            $liqsuggest = 'You\'re safe but not in an ideal condition';
         }
-        elseif ($liqratio_dls < 3) {
-            $liqsuggest = 'Increase your liquid assets';
+        elseif ($liqratio_dls < 17) {
+            $liqsuggest = 'Please, increase your liquid assets immediately';
         }
 
         return $liqsuggest;
