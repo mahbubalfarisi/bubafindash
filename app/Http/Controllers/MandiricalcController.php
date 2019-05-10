@@ -54,6 +54,6 @@ class MandiricalcController extends Controller
         $creditmandiri = $this->creditmandiri();
         $debitmandiri = $this->debitmandiri();
         $balancemandiri = $this->balancemandiri();
-        return view('mandiri/index')->with(['creditmandiri' => $creditmandiri, 'debitmandiri' => $debitmandiri, 'balancemandiri' => $balancemandiri, 'mandiris' => $mandiris, 'month' => $month]);
+        return view('mandiri/index')->with(['creditmandiri' => $creditmandiri, 'debitmandiri' => $debitmandiri, 'balancemandiri' => $balancemandiri, 'mandiris' => $mandiris]);
     }
 }
