@@ -53,9 +53,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/cashflow">
+                            <a href="/invest">
                                 <i class="fas fa-receipt"></i>
-                                <p>Cashflow</p>
+                                <p>Investment</p>
                             </a>
                         </li>
                         <li>
@@ -64,7 +64,7 @@
                                 <p>Assets</p>
                             </a>
                             <div id="collapse-asset" class="panel-collapse collapse in">
-                                <a href="/cash">
+                                <a href="/cashes/index">
                                     <div class="inner-menu">
                                         <p>Cash</p>
                                     </div>
@@ -77,11 +77,6 @@
                                 <a href="/jenius-flexi-server">
                                     <div class="inner-menu">
                                         <p>Jenius - Flexi Server</p>
-                                    </div>
-                                </a>
-                                <a href="/ovo">
-                                    <div class="inner-menu">
-                                        <p>OVO</p>
                                     </div>
                                 </a>
                                 <a href="/mandiri/index">
@@ -99,9 +94,16 @@
                                         <p>BRI</p>
                                     </div>
                                 </a>
+                                <a href="/ewallet">
+                                    <div class="inner-menu">
+                                        <p>e-Wallet</p>
+                                        <!-- OVO, LinkAja, GoPay -->
+                                    </div>
+                                </a>
                                 <a href="/gold">
                                     <div class="inner-menu">
                                         <p>Gold</p>
+                                        <!-- Tokopedia, Bukalapak -->
                                     </div>
                                 </a>
                                 <a href="/crypto">
