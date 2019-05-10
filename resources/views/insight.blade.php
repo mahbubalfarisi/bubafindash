@@ -26,7 +26,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Liquidity Ratio</p>
-									<p class="text-right">{{ceil($liquidityratio).'%'}}</p>
+									<p class="text-right">{{round($liquidityratio).'%'}}</p>
 									<p class="card-category">{{$liqratiostatus}}</p>
 									<br/>
 									<br/>
@@ -35,7 +35,7 @@
 			    		</div>
 			    		<div class="row">
 			      			<div class="col-12 col-md-12">			      				
-								<p class="card-category">{{'You have liquid assets to meet your household expenses for '.ceil($daytoliquid).' months.'}}</p>
+								<p class="card-category">{{'You have liquid assets to meet your household expenses for '.round($daytoliquid).' days.'}}</p>
 								<strong><p>{{'Suggestion: '. $liqsuggest}}</p></strong>
 							</div>
 			    		</div>

@@ -69,23 +69,22 @@ class CalcController extends Controller
         return $debtratiostatus;
     }
 
-    public function liquidityratio ()
+    public function daytoliquid ()
     {
         $liquidasset = '444928';
         $avgmonthexp = '1836168';
 
-        $liqratio = $liquidasset / $avgmonthexp * 100;
-
-        return $liqratio;
-    }
-
-    public function daytoliquid ()
-    {
-        $liqratio_dtl = $this->liquidityratio();
-
-        $daytoliquid = $liqratio_dtl / 100 * 30;
+        $daytoliquid = $liquidasset / ($avgmonthexp / 30);
 
         return $daytoliquid;
+    }
+
+    public function liquidityratio ()
+    { 
+        $dayliquid = $this->daytoliquid();
+        $liqratio = $dayliquid * 100 / 30 ;
+
+        return $liqratio;
     }
 
     public function liqratiostatus()
