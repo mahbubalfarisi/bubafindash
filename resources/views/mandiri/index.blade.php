@@ -95,13 +95,13 @@
 	                    		<tbody>
 									<tr>
 										<td class="text-right">
-											3200000
+											{{$creditmandiri}}
 										</td>
 										<td class="text-right">
-											100000
+											{{$debitmandiri}}
 										</td>
 										<td class="text-right">
-											3100000
+											{{$balancemandiri}}
 										</td>
 									</tr>
 								</tbody>

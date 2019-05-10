@@ -32,6 +32,7 @@ Route::get('/gold', function () {
 });
 
 Route::get('/insight', ['uses' => 'CalcController@insightview']);
+Route::get('/mandiri/index', ['uses' => 'MandiricalcController@mandiriview']);
 
 Route::resource('debts', 'DebtController');
 Route::resource('mandiri', 'MandiriController');

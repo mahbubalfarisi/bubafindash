@@ -15,9 +15,9 @@ class MandiriController extends Controller
      */
     public function index()
     {
-        $mandiris = Mandiri::all();
+        // $mandiris = Mandiri::all();
 
-        return view('mandiri.index', compact('mandiris'));
+        // return view('mandiri.index', compact('mandiris'));
     }
 
     /**
@@ -51,7 +51,7 @@ class MandiriController extends Controller
             'debit'=> $request->get('debit')
         ]);
         $mandiri->save();
-        return redirect('/mandiri')->with('success', 'Transaction record has been added');
+        return redirect('/mandiri/index')->with('success', 'Transaction record has been added');
     }
 
     /**
@@ -101,7 +101,7 @@ class MandiriController extends Controller
         $mandiri->debit = $request->get('debit');
         $mandiri->save();
 
-        return redirect('/mandiri')->with('success', 'Transaction data has been updated');
+        return redirect('/mandiri/index')->with('success', 'Transaction data has been updated');
     }
 
     /**
@@ -115,6 +115,6 @@ class MandiriController extends Controller
         $mandiri = Mandiri::find($id);
         $mandiri->delete();
 
-        return redirect('/mandiri')->with('success', 'Transaction record has been deleted');
+        return redirect('/mandiri/index')->with('success', 'Transaction record has been deleted');
     }
 }
