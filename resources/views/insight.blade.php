@@ -4,10 +4,14 @@
   	<!-- Content Section -->
 	<div class="content">
         <div class="row">
-        	<h3>Insight</h3>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+        		<h3>Insight</h3>
+			</div>
         </div>
         <div class="row">
-        	<h5>Ratio</h5>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+        		<h5>Ratio</h5>
+			</div>
         </div>
         <div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-6">
@@ -106,7 +110,9 @@
 			</div>
         </div>
         <div class="row">
-        	<h5>Asset and Debt</h5>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+        		<h5>Asset and Debt</h5>
+			</div>
         </div>
         <div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-6">
