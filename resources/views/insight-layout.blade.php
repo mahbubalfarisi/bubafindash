@@ -84,7 +84,7 @@
                                         <p>OVO</p>
                                     </div>
                                 </a>
-                                <a href="/mandiri">
+                                <a href="/mandiri/index">
                                     <div class="inner-menu">
                                         <p>Mandiri</p>
                                     </div>
