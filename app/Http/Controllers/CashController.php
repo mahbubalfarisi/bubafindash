@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Mandiri;
+use App\Cash;
 
-class MandiriController extends Controller
+class CashController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,7 @@ class MandiriController extends Controller
      */
     public function index()
     {
-        // $mandiris = Mandiri::all();
-
-        // return view('mandiri.index', compact('mandiris'));
+        //
     }
 
     /**
@@ -27,7 +25,7 @@ class MandiriController extends Controller
      */
     public function create()
     {
-        return view('mandiri.create');
+        return view('cashes.create');
     }
 
     /**
@@ -41,17 +39,17 @@ class MandiriController extends Controller
         $request->validate([
             'date'=>'required',
             'description'=>'required',
-            'credit'=> 'required|between:0,99.99',
-            'debit' => 'required|between:0,99.99',
+            'credit'=> 'required|integer',
+            'debit' => 'required|integer',
         ]);
-        $mandiri = new Mandiri([
+        $cash = new Cash([
             'date' => $request->get('date'),
             'description'=> $request->get('description'),
             'credit'=> $request->get('credit'),
             'debit'=> $request->get('debit')
         ]);
-        $mandiri->save();
-        return redirect('/mandiri/index')->with('success', 'Transaction record has been added');
+        $cash->save();
+        return redirect('/cashes/index')->with('success', 'Transaction record has been added');
     }
 
     /**
@@ -73,9 +71,9 @@ class MandiriController extends Controller
      */
     public function edit($id)
     {
-        $mandiri = Mandiri::find($id);
+        $cash = Cash::find($id);
 
-        return view('mandiri.edit', compact('mandiri'));
+        return view('cashes.edit', compact('cash'));
     }
 
     /**
@@ -90,18 +88,18 @@ class MandiriController extends Controller
         $request->validate([
             'date'=>'required',
             'description'=>'required',
-            'credit'=> 'required|between:0,99.99',
-            'debit' => 'required|between:0,99.99',
+            'credit'=> 'required|integer',
+            'debit' => 'required|integer',
         ]);
 
-        $mandiri = Mandiri::find($id);
-        $mandiri->date = $request->get('date');
-        $mandiri->description = $request->get('description');
-        $mandiri->credit = $request->get('credit');
-        $mandiri->debit = $request->get('debit');
-        $mandiri->save();
+        $cash = Cash::find($id);
+        $cash->date = $request->get('date');
+        $cash->description = $request->get('description');
+        $cash->credit = $request->get('credit');
+        $cash->debit = $request->get('debit');
+        $cash->save();
 
-        return redirect('/mandiri/index')->with('success', 'Transaction data has been updated');
+        return redirect('/cashes/index')->with('success', 'Transaction data has been updated');
     }
 
     /**
@@ -112,9 +110,9 @@ class MandiriController extends Controller
      */
     public function destroy($id)
     {
-        $mandiri = Mandiri::find($id);
-        $mandiri->delete();
+        $cash = Cash::find($id);
+        $cash->delete();
 
-        return redirect('/mandiri/index')->with('success', 'Transaction record has been deleted');
+        return redirect('/cashes/index')->with('success', 'Transaction record has been deleted');
     }
 }

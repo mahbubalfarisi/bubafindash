@@ -69,23 +69,22 @@ class CalcController extends Controller
         return $debtratiostatus;
     }
 
-    public function liquidityratio ()
+    public function daytoliquid ()
     {
         $liquidasset = '444928';
         $avgmonthexp = '1836168';
 
-        $liqratio = $liquidasset / $avgmonthexp * 100;
-
-        return $liqratio;
-    }
-
-    public function daytoliquid ()
-    {
-        $liqratio_dtl = $this->liquidityratio();
-
-        $daytoliquid = $liqratio_dtl / 100 * 30;
+        $daytoliquid = $liquidasset / ($avgmonthexp / 30);
 
         return $daytoliquid;
+    }
+
+    public function liquidityratio ()
+    { 
+        $dayliquid = $this->daytoliquid();
+        $liqratio = $dayliquid * 100 / 180 ;
+
+        return $liqratio;
     }
 
     public function liqratiostatus()
@@ -93,14 +92,14 @@ class CalcController extends Controller
         $liqratio_lrs = $this->liquidityratio();
         $liqratiostatus = 'Not Ideal';
 
-        if ($liqratio_lrs > 2 && $liqratio_lrs < 7) {
+        if ($liqratio_lrs >= 50 && $liqratio_lrs < 100) {
             $liqratiostatus = 'Ideal';
         }
-        elseif ($liqratio_lrs > 6) {
+        elseif ($liqratio_lrs >= 17 && $liqratio_lrs < 50) {
             $liqratiostatus = 'Good but Not Recommended';
         }
-        elseif ($liqratio_lrs < 3) {
-            $liqratiostatus = 'Not Ideal';
+        elseif ($liqratio_lrs < 17) {
+            $liqratiostatus = 'Warning';
         }
 
         return $liqratiostatus;
@@ -111,14 +110,14 @@ class CalcController extends Controller
         $liqratio_dls = $this->liquidityratio();
         $liqsuggest = 'Not Ideal';
 
-        if ($liqratio_dls > 30) {
+        if ($liqratio_dls >= 50 && $liqratio_dls < 100) {
             $liqsuggest = 'Keep this condition';
         }
-        elseif ($liqratio_dls > 20 && $liqratio_dls <= 30) {
-            $liqsuggest = 'Don\'t buy items or foods that are not needed';
+        elseif ($liqratio_dls >= 17 && $liqratio_dls < 50) {
+            $liqsuggest = 'You\'re safe but not in an ideal condition';
         }
-        elseif ($liqratio_dls <= 20) {
-            $liqsuggest = 'You have to increase your liquid assets immediately';
+        elseif ($liqratio_dls < 17) {
+            $liqsuggest = 'Please, increase your liquid assets immediately';
         }
 
         return $liqsuggest;

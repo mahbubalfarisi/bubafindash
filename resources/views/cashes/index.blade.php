@@ -1,15 +1,15 @@
 @extends('insight-layout')
-<title>Mandiri Balance</title>
+<title>Cash Balance</title>
 @section('content')
   	<!-- Content Section -->
 	<div class="content">
         <div class="row">
           	<div class="col-md-12">
-	        	<h3>Assets - Mandiri</h3>
+	        	<h3>Assets - Cash</h3>
 	        </div>
         </div>
         <div class="row">
-          	<div class="col-md-7">
+          	<div class="col-md-12">
             	<div class="card">
 				 	@if(session()->get('success'))
 				    	<div class="alert alert-success alert-block">
@@ -18,7 +18,7 @@
 				    	</div>
 				  	@endif
               		<div class="card-header">
-            			<h4 class="card-title">Mandiri Statement</h4>
+            			<h4 class="card-title">Cash Statement</h4>
               		</div>
               		<div class="card-body">
                 		<div class="table-responsive">
@@ -38,18 +38,18 @@
 			                      	</th>
 		                    	</thead>
 	                    		<tbody>
-							        @foreach($mandiris as $mandiri)
+							        @foreach($cashes as $cash)
 							        <tr>
-							            <td>{{$mandiri->date}}</td>
-							            <td>{{$mandiri->description}}</td>
-							            <td class="text-right">{{'Rp'.$mandiri->credit}}</td>
-							            <td class="text-right">{{'Rp'.$mandiri->debit}}</td>
+							            <td>{{$cash->date}}</td>
+							            <td>{{$cash->description}}</td>
+							            <td class="text-right">{{'Rp'.$cash->credit}}</td>
+							            <td class="text-right">{{'Rp'.$cash->debit}}</td>
 							        </tr>
 							        @endforeach
 		                    	</tbody>
 	                  		</table>
 	                    	<div class="d-flex">
-								<a href="/mandiri/create/" class="btn btn-primary ml-auto">
+								<a href="/cashes/create/" class="btn btn-primary ml-auto">
 									<i class="fas fa-plus"></i>
 								</a>
 	                		</div>
@@ -57,10 +57,10 @@
               		</div>
             	</div>
           	</div>
-          	<div class="col-md-4" style="position: fixed; top: 11em; right: 1em;">
+          	<div class="col-md-4">
           		<div class="card">
               		<div class="card-header">
-                		<h4 class="card-title">Mandiri Summary</h4>
+                		<h4 class="card-title">Cash Summary</h4>
               		</div>
               		<div class="card-body">
                 		<div class="table-responsive">
@@ -79,13 +79,13 @@
 	                    		<tbody>
 									<tr>
 										<td class="text-center">
-											{{'Rp.'.$creditmandiri}}
+											{{'Rp.'.$creditcash}}
 										</td>
 										<td class="text-center">
-											{{'Rp.'.$debitmandiri}}
+											{{'Rp.'.$debitcash}}
 										</td>
 										<td class="text-center">
-											{{'Rp.'.$balancemandiri}}
+											{{'Rp.'.$balancecash}}
 										</td>
 									</tr>
 								</tbody>
