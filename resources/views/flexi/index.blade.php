@@ -1,11 +1,11 @@
 @extends('insight-layout')
-<title>Jenius Reguler Balance</title>
+<title>Jenius Flexi Server Balance</title>
 @section('content')
   	<!-- Content Section -->
 	<div class="content">
         <div class="row">
           	<div class="col-md-12">
-	        	<h3>Assets - Jenius Reguler</h3>
+	        	<h3>Assets - Jenius Flexi Server</h3>
 	        </div>
         </div>
         <div class="row">
@@ -18,7 +18,7 @@
 				    	</div>
 				  	@endif
               		<div class="card-header">
-            			<h4 class="card-title">Jenius Reguler Statement</h4>
+            			<h4 class="card-title">Jenius Flexi Server Statement</h4>
               		</div>
               		<div class="card-body">
                 		<div class="table-responsive">
@@ -38,18 +38,18 @@
 			                      	</th>
 		                    	</thead>
 	                    		<tbody>
-							        @foreach($jeniuses as $jenius)
+							        @foreach($flexis as $flexi)
 							        <tr>
-							            <td>{{$jenius->date}}</td>
-							            <td>{{$jenius->description}}</td>
-							            <td class="text-right">{{'Rp'.$jenius->credit}}</td>
-							            <td class="text-right">{{'Rp'.$jenius->debit}}</td>
+							            <td>{{$flexi->date}}</td>
+							            <td>{{$flexi->description}}</td>
+							            <td class="text-right">{{'Rp'.$flexi->credit}}</td>
+							            <td class="text-right">{{'Rp'.$flexi->debit}}</td>
 							        </tr>
 							        @endforeach
 		                    	</tbody>
 	                  		</table>
 	                    	<div class="d-flex">
-								<a href="/jenius/create/" class="btn btn-primary ml-auto">
+								<a href="/flexi/create/" class="btn btn-primary ml-auto">
 									<i class="fas fa-plus"></i>
 								</a>
 	                		</div>
@@ -60,7 +60,7 @@
           	<div class="col-md-4" style="position: fixed; top: 11em; right: 1em;">
           		<div class="card">
               		<div class="card-header">
-                		<h4 class="card-title">Jenius Reguler Summary</h4>
+                		<h4 class="card-title">Jenius Flexi Server Summary</h4>
               		</div>
               		<div class="card-body">
                 		<div class="table-responsive">
@@ -79,13 +79,13 @@
 	                    		<tbody>
 									<tr>
 										<td class="text-center">
-											{{'Rp.'.$creditjenius}}
+											{{'Rp.'.$creditflexi}}
 										</td>
 										<td class="text-center">
-											{{'Rp.'.$debitjenius}}
+											{{'Rp.'.$debitflexi}}
 										</td>
 										<td class="text-center">
-											{{'Rp.'.$balancejenius}}
+											{{'Rp.'.$balanceflexi}}
 										</td>
 									</tr>
 								</tbody>
