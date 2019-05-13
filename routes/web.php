@@ -15,20 +15,8 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/asset', function () {
-    return view('asset');
-});
-
 Route::get('/finplan', function () {
     return view('finplan');
-});
-
-Route::get('/cashflow', function () {
-    return view('cashflow');
-});
-
-Route::get('/gold', function () {
-    return view('gold');
 });
 
 Route::get('/insight', ['uses' => 'CalcController@insightview']);
@@ -37,6 +25,7 @@ Route::get('/cashes/index', ['uses' => 'CashcalcController@cashview']);
 Route::get('/ovo/index', ['uses' => 'OvocalcController@ovoview']);
 Route::get('/jenius/index', ['uses' => 'JeniuscalcController@jeniusview']);
 Route::get('/flexi/index', ['uses' => 'FlexicalcController@flexiview']);
+Route::get('/linkaja/index', ['uses' => 'LinkajacalcController@linkajaview']);
 Route::get('/gopay/index', ['uses' => 'GopaycalcController@gopayview']);
 Route::get('/cryptos/index', ['uses' => 'CryptocalcController@cryptoview']);
 Route::get('/mtr/index', ['uses' => 'MtrcalcController@mtrview']);

@@ -25,7 +25,7 @@ class FlexiController extends Controller
      */
     public function create()
     {
-        return view('flexis.create');
+        return view('flexi.create');
     }
 
     /**

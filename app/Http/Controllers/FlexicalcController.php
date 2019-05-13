@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Flexi;
 
 class FlexicalcController extends Controller
@@ -37,10 +38,10 @@ class FlexicalcController extends Controller
     public function balanceflexi ()
     {
         $balanceflexi = '0';
-        $credito = $this->creditflexi();
-        $debito = $this->debitflexi();
+        $creditfl = $this->creditflexi();
+        $debitfl = $this->debitflexi();
 
-        $balanceflexi = $credito - $debito;
+        $balanceflexi = $creditfl - $debitfl;
 
         return $balanceflexi;
     }

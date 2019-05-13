@@ -41,7 +41,7 @@
 		                    	</tbody>
 	                  		</table>
 	                    	<div class="d-flex">
-								<a href="/mtr/create/" class="btn btn-primary ml-auto">
+								<a href="/mtrs/create/" class="btn btn-primary ml-auto">
 									<i class="fas fa-plus"></i>
 								</a>
 	                		</div>
