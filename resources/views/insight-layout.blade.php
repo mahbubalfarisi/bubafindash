@@ -53,10 +53,22 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/invest">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse-asset2">
                                 <i class="fas fa-receipt"></i>
                                 <p>Investment</p>
                             </a>
+                            <div id="collapse-asset2" class="panel-collapse collapse in">
+                                <a href="/mandiritr">
+                                    <div class="inner-menu">
+                                        <p>Mandiri Tabungan Rencana</p>
+                                    </div>
+                                </a>
+                                <a href="/cryptos/index">
+                                    <div class="inner-menu">
+                                        <p>Ethereum</p>
+                                    </div>
+                                </a>
+                            </div>
                         </li>
                         <li>
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse-asset">
@@ -98,17 +110,6 @@
                                     <div class="inner-menu">
                                         <p>e-Wallet</p>
                                         <!-- OVO, LinkAja, GoPay -->
-                                    </div>
-                                </a>
-                                <a href="/gold">
-                                    <div class="inner-menu">
-                                        <p>Gold</p>
-                                        <!-- Tokopedia, Bukalapak -->
-                                    </div>
-                                </a>
-                                <a href="/crypto">
-                                    <div class="inner-menu">
-                                        <p>Cryptocurrency</p>
                                     </div>
                                 </a>
                             </div>

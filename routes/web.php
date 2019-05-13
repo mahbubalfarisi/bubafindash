@@ -38,3 +38,4 @@ Route::get('/cashes/index', ['uses' => 'CashcalcController@cashview']);
 Route::resource('debts', 'DebtController');
 Route::resource('mandiri', 'MandiriController');
 Route::resource('cashes', 'CashController');
+Route::resource('cryptos', 'CryptoController');
