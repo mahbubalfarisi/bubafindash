@@ -152,7 +152,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Total Asset</p>
-									<p class="text-right">{{'Rp'.(number_format((float)$totalasset, 2, '.', ''))}}</p>
+									<p class="text-right">{{'Rp'.(number_format((float)$gettotalasset, 2, '.', ''))}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -227,7 +227,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Average Monthly Income</p>
-									<p class="text-right">{{'Rp1728061'}}</p>
+									<p class="text-right">{{'Rp5500000'}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
