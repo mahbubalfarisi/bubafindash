@@ -9,7 +9,7 @@
 	        </div>
         </div>
         <div class="row">
-          	<div class="col-md-12">
+          	<div class="col-md-8">
             	<div class="card">
 				 	@if(session()->get('success'))
 				    	<div class="alert alert-success alert-block">
@@ -18,41 +18,43 @@
 				    	</div>
 				  	@endif
               		<div class="card-header">
-            			<h4 class="card-title">Cash Statement</h4>
+                  		<div class="d-flex">
+                			<h4 class="card-title">Cash Statement</h4>
+							<a href="/cashes/create/" class="btn btn-primary ml-auto">
+								<i class="fas fa-plus"></i>
+							</a>
+                		</div>
               		</div>
               		<div class="card-body">
                 		<div class="table-responsive">
                   			<table class="table">
                     			<thead class=" text-primary">
-			                      	<th class="text-center">
-			                        	Date
-			                      	</th>
-		                      		<th class="text-center">
-		                        		Description
-		                      		</th>
-		                      		<th class="text-center">
-		                        		Credit
-			                      	</th>
-			                      	<th class="text-center">
-			                        	Debit
-			                      	</th>
+                    				<tr class="d-flex">
+				                      	<th class="text-center col-2">
+				                        	Date
+				                      	</th>
+			                      		<th class="text-center col-6">
+			                        		Description
+			                      		</th>
+			                      		<th class="text-center col-2">
+			                        		Credit
+				                      	</th>
+				                      	<th class="text-center col-2">
+				                        	Debit
+				                      	</th>
+			                      	</tr>
 		                    	</thead>
 	                    		<tbody>
 							        @foreach($cashes as $cash)
-							        <tr>
-							            <td>{{$cash->date}}</td>
-							            <td>{{$cash->description}}</td>
-							            <td class="text-right">{{'Rp'.$cash->credit}}</td>
-							            <td class="text-right">{{'Rp'.$cash->debit}}</td>
+							        <tr class="d-flex">
+							            <td class="text-center col-2">{{$cash->date}}</td>
+							            <td class="text-left col-6">{{$cash->description}}</td>
+							            <td class="text-right col-2">{{'Rp'.$cash->credit}}</td>
+							            <td class="text-right col-2">{{'Rp'.$cash->debit}}</td>
 							        </tr>
 							        @endforeach
 		                    	</tbody>
 	                  		</table>
-	                    	<div class="d-flex">
-								<a href="/cashes/create/" class="btn btn-primary ml-auto">
-									<i class="fas fa-plus"></i>
-								</a>
-	                		</div>
 	                	</div>
               		</div>
             	</div>

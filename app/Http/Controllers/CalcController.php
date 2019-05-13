@@ -335,6 +335,7 @@ class CalcController extends Controller
     {
         $cryptos = Crypto::all();
         $balancecrypto = '0';
+        $teth = '0';
         $price = '2736929.58';
 
         foreach ($cryptos as $crypto) {
