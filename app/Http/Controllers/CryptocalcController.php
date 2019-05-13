@@ -16,7 +16,6 @@ class CryptocalcController extends Controller
         $balancecrypto = '0';
 
         foreach ($cryptos as $crypto) {
-            $crypto = $crypto->balance;
             $balancecrypto = $balancecrypto + $crypto->balance;
         }
 
@@ -30,7 +29,6 @@ class CryptocalcController extends Controller
         $valuecrypto = '0';
 
         foreach ($cryptos as $crypto) {
-            $crypto = $crypto->value;
             $valuecrypto = $valuecrypto + $crypto->value;
         }
 
@@ -39,7 +37,6 @@ class CryptocalcController extends Controller
 
     public function cryptoview ()
     {
-
     	$cryptos = Crypto::all();
 
         $balancecrypto = $this->balancecrypto();

@@ -26,11 +26,11 @@
               </div>
               <div class="form-group">
                 <label for="balance">Balance</label>
-                <input type="number" step="0.01" class="form-control" name="balance"/>
+                <input type="number" step="0.0001" class="form-control" name="balance"/>
               </div>
               <div class="form-group">
                 <label for="value">Value</label>
-                <input type="number" step="0.01" class="form-control" name="value"/>
+                <input type="number" step="0.0001" class="form-control" name="value"/>
               </div>
               <button type="submit" class="btn btn-primary">Add Transaction Record</button>
             </form>

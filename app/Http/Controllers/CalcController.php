@@ -34,13 +34,12 @@ class CalcController extends Controller
     }
 
     public function debtratio ()
-    {
-        $totaldebt_dr = $this->sumdebt();
-        
+    {   
         $debtratio = '0';
         $avgmonthincome = '5500000';
+        $liabilities = '2950000';
 
-        $debtratio = $totaldebt_dr / $avgmonthincome * 100;
+        $debtratio = $liabilities / $avgmonthincome * 100;
 
         return $debtratio;
     }

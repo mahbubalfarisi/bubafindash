@@ -27,11 +27,11 @@
               </div>
               <div class="form-group">
                 <label for="balance">Balance</label>
-                <input type="number" step="0.01" class="form-control" name="balance" value={{ $crypto->balance }} />
+                <input type="number" step="0.0001" class="form-control" name="balance" value={{ $crypto->balance }} />
               </div>
               <div class="form-group">
                 <label for="value">Value</label>
-                <input type="number" step="0.01" class="form-control" name="value" value={{ $crypto->value }} />
+                <input type="number" step="0.0001" class="form-control" name="value" value={{ $crypto->value }} />
               </div>
               <button type="submit" class="btn btn-primary">Update Transaction Record</button>
             </form>
