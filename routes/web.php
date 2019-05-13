@@ -35,8 +35,10 @@ Route::get('/insight', ['uses' => 'CalcController@insightview']);
 Route::get('/mandiri/index', ['uses' => 'MandiricalcController@mandiriview']);
 Route::get('/cashes/index', ['uses' => 'CashcalcController@cashview']);
 Route::get('/cryptos/index', ['uses' => 'CryptocalcController@cryptoview']);
+Route::get('/ovo/index', ['uses' => 'OvocalcController@ovoview']);
 
 Route::resource('debts', 'DebtController');
 Route::resource('mandiri', 'MandiriController');
 Route::resource('cashes', 'CashController');
 Route::resource('cryptos', 'CryptoController');
+Route::resource('ovo', 'OvoController');

@@ -96,20 +96,19 @@
                                         <p>Mandiri</p>
                                     </div>
                                 </a>
-                                <a href="/bni">
+                                <a href="/ovo/index">
                                     <div class="inner-menu">
-                                        <p>BNI</p>
+                                        <p>OVO</p>
                                     </div>
                                 </a>
-                                <a href="/bri">
+                                <a href="/linkaja">
                                     <div class="inner-menu">
-                                        <p>BRI</p>
+                                        <p>LinkAja</p>
                                     </div>
                                 </a>
-                                <a href="/ewallet">
+                                <a href="/gopay">
                                     <div class="inner-menu">
-                                        <p>e-Wallet</p>
-                                        <!-- OVO, LinkAja, GoPay -->
+                                        <p>Gopay</p>
                                     </div>
                                 </a>
                             </div>

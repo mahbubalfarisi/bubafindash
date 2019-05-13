@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMandirisTable extends Migration
+class CreateOvosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateMandirisTable extends Migration
      */
     public function up()
     {
-        Schema::create('mandiris', function (Blueprint $table) {
+        Schema::create('ovos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->date('date');
             $table->string('description');
@@ -30,6 +30,6 @@ class CreateMandirisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mandiris');
+        Schema::dropIfExists('ovos');
     }
 }

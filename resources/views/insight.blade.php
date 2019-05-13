@@ -43,7 +43,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -69,7 +69,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -103,7 +103,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -135,7 +135,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -160,7 +160,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -185,7 +185,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -210,7 +210,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-	          				<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -235,7 +235,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
@@ -260,7 +260,7 @@
 			  		<div class="card-footer ">
 			    		<hr>
 			    		<div class="stats">
-			      			<i class="fas fa-calendar-day"></i> Last day
+			      			<i class="fas fa-info-circle"></i> What's this?
 			    		</div>
 			  		</div>
 				</div>
