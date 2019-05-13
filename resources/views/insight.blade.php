@@ -126,8 +126,8 @@
 			      			</div>
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
-									<p class="card-category">Liquid Balance</p>
-									<p class="text-right">{{'Rp'.$totaldebt}}</p>
+									<p class="card-category">Liquid Asset</p>
+									<p class="text-right">{{'Rp'.$getliquidasset}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -152,7 +152,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Total Asset</p>
-									<p class="text-right">{{'Rp'.$totalasset}}</p>
+									<p class="text-right">{{'Rp'.(number_format((float)$totalasset, 2, '.', ''))}}</p>
 			        			</div>
 			      			</div>
 			    		</div>
@@ -177,7 +177,7 @@
 			      			<div class="col-7 col-md-8">
 			        			<div class="numbers">
 									<p class="card-category">Net Asset</p>
-									<p class="text-right">{{'Rp'.$netasset}}</p>
+									<p class="text-right">{{'Rp'.(number_format((float)$netasset, 2, '.', ''))}}</p>
 			        			</div>
 			      			</div>
 			    		</div>

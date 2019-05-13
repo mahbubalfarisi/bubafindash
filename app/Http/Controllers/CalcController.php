@@ -611,6 +611,8 @@ class CalcController extends Controller
         $solvencyratiostatus = $this->solvencyratiostatus();
         $srsdesc = $this->srsdesc();
         $srsuggest = $this->srsuggest();
-        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset, 'solvencyratio' => $solvencyratio, 'solvencyratiostatus' => $solvencyratiostatus, 'srsdesc' => $srsdesc, 'srsuggest' => $srsuggest]);
+        $gettotalasset = $this->gettotalasset();
+        $getliquidasset = $this->getliquidasset();
+        return view('insight')->with(['totaldebt' => $totaldebtsd, 'remainingdebt' => $remainingdebt, 'debtratio' => $debtratio, 'debtratiostatus' => $debtratiostatus, 'liquidityratio' => $liqratio, 'daytoliquid' => $daytoliquid, 'liqratiostatus' => $liqratiostatus, 'liqsuggest' => $liqsuggest, 'totalasset' => $totalasset, 'netasset' => $netasset, 'solvencyratio' => $solvencyratio, 'solvencyratiostatus' => $solvencyratiostatus, 'srsdesc' => $srsdesc, 'srsuggest' => $srsuggest, 'gettotalasset' => $gettotalasset, 'getliquidasset' => $getliquidasset]);
     }
 }
