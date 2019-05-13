@@ -120,7 +120,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/finplan">
+                            <a href="https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH&tsyms=USD&api_key=3344741df194be4ca00cd66fa9736c06f070b1fc53e38c5f0088a40a0f311b2f">
                                 <i class="fas fa-receipt"></i>
                                 <p>Financial Plan</p>
                             </a>
