@@ -81,12 +81,12 @@
                                         <p>Cash</p>
                                     </div>
                                 </a>
-                                <a href="/jenius-reguler">
+                                <a href="/jenius/index">
                                     <div class="inner-menu">
                                         <p>Jenius Reguler</p>
                                     </div>
                                 </a>
-                                <a href="/jenius-flexi-server">
+                                <a href="/flexi/index">
                                     <div class="inner-menu">
                                         <p>Jenius - Flexi Server</p>
                                     </div>
@@ -101,12 +101,12 @@
                                         <p>OVO</p>
                                     </div>
                                 </a>
-                                <a href="/linkaja">
+                                <a href="/linkaja/index">
                                     <div class="inner-menu">
                                         <p>LinkAja</p>
                                     </div>
                                 </a>
-                                <a href="/gopay">
+                                <a href="/gopay/index">
                                     <div class="inner-menu">
                                         <p>Gopay</p>
                                     </div>
