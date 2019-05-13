@@ -39,7 +39,7 @@ Route::get('/jenius/index', ['uses' => 'JeniuscalcController@jeniusview']);
 Route::get('/flexi/index', ['uses' => 'FlexicalcController@flexiview']);
 Route::get('/gopay/index', ['uses' => 'GopaycalcController@gopayview']);
 Route::get('/cryptos/index', ['uses' => 'CryptocalcController@cryptoview']);
-Route::get('/mtrs/index', ['uses' => 'MtrcalcController@mtrview']);
+Route::get('/mtr/index', ['uses' => 'MtrcalcController@mtrview']);
 
 Route::resource('debts', 'DebtController');
 Route::resource('mandiri', 'MandiriController');

@@ -36,6 +36,9 @@
 		                        		Balance
 			                      	</th>
 			                      	<th class="text-center">
+			                        	Bought
+			                      	</th>
+			                      	<th class="text-center">
 			                        	Value
 			                      	</th>
 		                    	</thead>
@@ -45,6 +48,7 @@
 							            <td class="text-center">{{$crypto->date}}</td>
 							            <td class="text-center">{{'ETH '.$crypto->balance}}</td>
 							            <td class="text-center">{{'Rp.'.$crypto->value}}</td>
+							            <td class="text-center">{{'Rp.'.(number_format((float)$valuecrypto, 2, '.', ''))}}</td>
 							            <td class="text-right">
 						            		<a href="{{ route('cryptos.edit',$crypto->id)}}">
 							            		<button class="btn btn-primary">
@@ -79,7 +83,7 @@
                   			<table class="table">
                     			<thead class=" text-primary">
 			                      	<th class="text-center">
-			                        	ETH to Rupiah
+			                        	Total ETH Balance
 			                      	</th>
 			                      	<th class="text-center">
 			                        	Total ETH Value to Rupiah
@@ -88,41 +92,10 @@
 	                    		<tbody>
 									<tr>
 										<td class="text-center">
-											{{'Rp.'.$balancecrypto}}
-										</td>
-										<td class="text-center">
-											{{'Rp.'.$valuecrypto}}
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-          	</div>
-          	<div class="col-md-4">
-          		<div class="card">
-              		<div class="card-header">
-                		<h4 class="card-title">Crypto Summary</h4>
-              		</div>
-              		<div class="card-body">
-                		<div class="table-responsive">
-                  			<table class="table">
-                    			<thead class=" text-primary">
-			                      	<th class="text-center">
-			                        	Total ETH Balance
-			                      	</th>
-			                      	<th class="text-center">
-			                        	Total ETH Value
-			                      	</th>
-		                    	</thead>
-	                    		<tbody>
-									<tr>
-										<td class="text-center">
 											{{'ETH '.$balancecrypto}}
 										</td>
 										<td class="text-center">
-											{{'Rp.'.$valuecrypto}}
+											{{'Rp.'.(number_format((float)$valuecrypto, 2, '.', ''))}}
 										</td>
 									</tr>
 								</tbody>

@@ -58,7 +58,7 @@
                                 <p>Investment</p>
                             </a>
                             <div id="collapse-asset2" class="panel-collapse collapse in">
-                                <a href="/mandiritr">
+                                <a href="/mtr/index">
                                     <div class="inner-menu">
                                         <p>Mandiri Tabungan Rencana</p>
                                     </div>

@@ -331,7 +331,7 @@ class CalcController extends Controller
     }
 
     // Calculation for Crypto
-    public function gettotalcrypto ()
+    public function gettotaleth ()
     {
         $cryptos = Crypto::all();
         $balancecrypto = '0';
@@ -343,6 +343,20 @@ class CalcController extends Controller
         }
 
         return $teth;
+    }
+
+    // Calculation for Mandiri Tabungan Rencana
+    public function gettotalmtr ()
+    {
+        $mtrs = Mtr::all();
+        $tmtr = '0';
+
+        foreach ($mtrs as $mtr) {
+            $credit = $mtr->credit;
+            $tmtr = $tmtr + $mtr->credit;
+        }
+
+        return $tmtr;
     }
 
     // Get Total Asset
