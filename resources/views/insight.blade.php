@@ -266,9 +266,6 @@
 				</div>
 			</div>
         </div>
-        <div class="row">
-        	<h5>Detail Asset</h5>
-        </div>
   	</div>
   	<!-- End of Content Section -->
 @endsection
