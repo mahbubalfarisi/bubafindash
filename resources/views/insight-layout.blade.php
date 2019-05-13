@@ -100,6 +100,11 @@
                                         <p>OVO</p>
                                     </div>
                                 </a>
+                                <a href="/ovopoint/index">
+                                    <div class="inner-menu">
+                                        <p>OVO Points</p>
+                                    </div>
+                                </a>
                                 <a href="/linkaja/index">
                                     <div class="inner-menu">
                                         <p>LinkAja</p>

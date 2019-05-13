@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Linkaja;
+use App\Ovopoints;
 
-class LinkajaController extends Controller
+class OvopointsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,7 +25,7 @@ class LinkajaController extends Controller
      */
     public function create()
     {
-        return view('linkaja.create');
+        return view('ovopoint.create');
     }
 
     /**
@@ -42,14 +42,14 @@ class LinkajaController extends Controller
             'credit'=> 'required|between:0,99.99',
             'debit' => 'required|between:0,99.99',
         ]);
-        $linkaja = new Linkaja([
+        $ovop = new Ovopoints([
             'date' => $request->get('date'),
             'description'=> $request->get('description'),
             'credit'=> $request->get('credit'),
             'debit'=> $request->get('debit')
         ]);
-        $linkaja->save();
-        return redirect('/linkaja/index')->with('success', 'Transaction record has been added');
+        $ovop->save();
+        return redirect('/ovopoint/index')->with('success', 'Transaction record has been added');
     }
 
     /**
@@ -71,9 +71,9 @@ class LinkajaController extends Controller
      */
     public function edit($id)
     {
-        $linkaja = Linkaja::find($id);
+        $ovop = Ovopoints::find($id);
 
-        return view('linkaja.edit', compact('linkaja'));
+        return view('ovopoint.edit', compact('ovopoint'));
     }
 
     /**
@@ -92,14 +92,14 @@ class LinkajaController extends Controller
             'debit' => 'required|between:0,99.99',
         ]);
 
-        $linkaja = Linkaja::find($id);
-        $linkaja->date = $request->get('date');
-        $linkaja->description = $request->get('description');
-        $linkaja->credit = $request->get('credit');
-        $linkaja->debit = $request->get('debit');
-        $linkaja->save();
+        $ovop = Ovopoints::find($id);
+        $ovop->date = $request->get('date');
+        $ovop->description = $request->get('description');
+        $ovop->credit = $request->get('credit');
+        $ovop->debit = $request->get('debit');
+        $ovop->save();
 
-        return redirect('/linkaja/index')->with('success', 'Transaction data has been updated');
+        return redirect('/ovopoints/index')->with('success', 'Transaction data has been updated');
     }
 
     /**
@@ -110,9 +110,9 @@ class LinkajaController extends Controller
      */
     public function destroy($id)
     {
-        $linkaja = Linkaja::find($id);
-        $linkaja->delete();
+        $ovop = Ovopoints::find($id);
+        $ovop->delete();
 
-        return redirect('/linkaja/index')->with('success', 'Transaction record has been deleted');
+        return redirect('/ovopoints/index')->with('success', 'Transaction record has been deleted');
     }
 }

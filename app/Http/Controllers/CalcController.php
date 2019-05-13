@@ -9,6 +9,7 @@ use App\Jenius;
 use App\Flexi;
 use App\Mandiri;
 use App\Ovo;
+use App\Ovopoints;
 use App\Linkaja;
 use App\Gopay;
 use App\Crypto;
@@ -240,6 +241,51 @@ class CalcController extends Controller
         return $tovo;
     }
 
+    // Calculation for OVO Points
+    public function creditovop ()
+    {
+        $ovopoints = Ovopoints::all();
+        $creditovop = '0';
+
+        foreach ($ovopoints as $ovop) {
+            $credit = $ovop->credit;
+            $creditovop = $creditovop + $ovop->credit;
+        }
+
+        return $creditovop;
+    }
+
+    public function debitovop ()
+    {
+        $ovopoints = Ovopoints::all();
+        $debitovop = '0';
+
+        foreach ($ovopoints as $ovop) {
+            $debit = $ovop->debit;
+            $debitovop = $debitovop + $ovop->debit;
+        }
+
+        return $debitovop;
+    }
+
+    public function balanceovop ()
+    {
+        $balanceovop = '0';
+        $creditop = $this->creditovop();
+        $debitop = $this->debitovop();
+
+        $balanceovop = $creditop - $debitop;
+
+        return $balanceovop;
+    }
+
+    public function gettotalovopoints ()
+    {
+        $tovopoints = $this->balanceovop();
+
+        return $tovopoints;
+    }
+
     // Calculation for linkaja Asset
     public function creditlinkaja ()
     {
@@ -368,12 +414,13 @@ class CalcController extends Controller
         $tflexi = $this->gettotalflexi();
         $tmandiri = $this->gettotalmandiri();
         $tovo = $this->gettotalovo();
+        $tovopoints = $this->gettotalovopoints();
         $tlinkaja = $this->gettotallinkaja();
         $tgopay = $this->gettotalgopay();
         $teth = $this->gettotaleth();
         $tmtr = $this->gettotalmtr();
         $totalasset = '0';
-        $totalasset = $tcash + $tjenius + $tflexi + $tmandiri + $tovo + $tlinkaja + $tgopay + $teth + $tmtr;
+        $totalasset = $tcash + $tjenius + $tflexi + $tmandiri + $tovo + $tovopoints + $tlinkaja + $tgopay + $teth + $tmtr;
 
         return $totalasset;
     }
@@ -386,10 +433,11 @@ class CalcController extends Controller
         $tflexi = $this->gettotalflexi();
         $tmandiri = $this->gettotalmandiri();
         $tovo = $this->gettotalovo();
+        $tovopoints = $this->gettotalovopoints();
         $tlinkaja = $this->gettotallinkaja();
         $tgopay = $this->gettotalgopay();
         $liquidasset = '0';
-        $liquidasset = $tcash + $tjenius + $tflexi + $tmandiri + $tovo + $tlinkaja + $tgopay;
+        $liquidasset = $tcash + $tjenius + $tflexi + $tmandiri + $tovo + $tovopoints + $tlinkaja + $tgopay;
 
         return $liquidasset;
     }
