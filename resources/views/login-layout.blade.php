@@ -61,20 +61,6 @@
                             <span class="navbar-toggler-bar navbar-kebab"></span>
                             <span class="navbar-toggler-bar navbar-kebab"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                            <form>
-                                <div class="input-group no-border">
-                                    <input type="text" value="" class="form-control" placeholder="Search...">
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <ul class="navbar-nav">
-                            </ul>
-                        </div>
                     </div>
                 </nav>
                 <!-- End of Navbar -->

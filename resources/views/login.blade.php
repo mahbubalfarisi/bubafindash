@@ -2,7 +2,7 @@
 <title>Login</title>
 @section('content')
   	<!-- Content Section -->
-  	<div class="content">
+  	<div class="content" style="min-height: 75% !important">
     	<div class="row">
           	<!-- Login User -->
           	<div class="col-md-12">

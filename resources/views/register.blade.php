@@ -1,7 +1,7 @@
 @extends('login-layout')
 <title>Register</title>
 @section('content')
-    <div class="content">
+    <div class="content" style="margin-top: 55px !important">
         <div class="row">
             <!-- Register User -->
             <div class="col-md-12">
