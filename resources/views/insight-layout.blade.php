@@ -153,16 +153,6 @@
                             <span class="navbar-toggler-bar navbar-kebab"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                            <form>
-                                <div class="input-group no-border">
-                                    <input type="text" value="" class="form-control" placeholder="Search...">
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
                             <ul class="navbar-nav">
 
                                 <!-- Notifications Menu -->
@@ -181,7 +171,7 @@
                                 <!-- User Menu -->
                                 <li class="nav-item btn-rotate dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="far fa-user"> {{Session::get('name')}}</i>
+                                        <i class="far fa-user"></i> {{Session::get('name')}} 
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="/user">Show Profile</a>

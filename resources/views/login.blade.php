@@ -63,10 +63,10 @@
 		                    	<div class="col-md-6 pr-1 ml-auto mr-auto">
 					                <div class="form-group">
 					                    <button type="submit" class="btn btn-md btn-primary">Login</button>
-					                    <a href="{{url('register')}}" class="btn btn-md btn-warning">Register</a>
 					                </div>
 					            </div>
 					        </div>
+		                    <a class="col-md-12 pr-1 ml-auto mr-auto" href="{{url('register')}}"><i class="far fa-plus-square"></i> Register New Account</a>
 			            </form>
               		</div>
             	</div>

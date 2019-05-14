@@ -56,11 +56,14 @@
                                 <div class="row">
                                     <div class="col-md-6 pr-1 ml-auto mr-auto">
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-md btn-primary">Submit</button>
-                                            <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+                                            <button type="submit" class="btn btn-md btn-primary">Register New Account</button>
+                                            <button type="reset" class="btn btn-md btn-danger">Reset</button>
                                         </div>
                                     </div>
                                 </div>
+                                    <div class="col-md-3 pr-1">
+                                        <a href="/login"><i class="fas fa-angle-left"></i> Back to Login Page</a>
+                                    </div>
                             </form>
                         </div>
                     </div>

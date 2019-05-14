@@ -4625,7 +4625,7 @@ License - nucleoapp.com/license/
 .sidebar,
 .off-canvas-sidebar {
   position: fixed;
-  top: 0;
+  top: 10px;
   height: 100%;
   bottom: 0;
   width: 260px;
@@ -5124,7 +5124,7 @@ License - nucleoapp.com/license/
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
  }
 
-.main-panel>.content, {
+.main-panel>.content {
   padding: 0 30px 30px;
   min-height: calc(100vh - 170px);
   margin-top: 93px;
