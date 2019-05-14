@@ -42,3 +42,13 @@ Route::resource('linkaja', 'LinkajaController');
 Route::resource('gopay', 'GopayController');
 Route::resource('cryptos', 'CryptoController');
 Route::resource('mtrs', 'MtrController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home_user', 'UserController@index');
+Route::get('/login', 'UserController@login');
+Route::post('/loginPost', 'UserController@loginPost');
+Route::get('/register', 'UserController@register');
+Route::post('/registerPost', 'UserController@registerPost');
+Route::get('/logout', 'UserController@logout');

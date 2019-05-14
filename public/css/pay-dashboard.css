@@ -5557,7 +5557,8 @@ License - nucleoapp.com/license/
 
 .card {
   border-radius: 12px;
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 12px 12px 12px rgba(0, 0, 0, 0.125);
+  box-shadow: 1px 12px 12px 12px rgba(0, 0, 0, 0.125);
   background-color: #FFFFFF;
   color: #252422;
   margin-bottom: 20px;
@@ -5823,8 +5824,8 @@ License - nucleoapp.com/license/
 }
 
 .card-stats:hover {
-  -webkit-box-shadow: 1px 12px 12px 12px rgba(0, 0, 0, 0.125);
-  box-shadow: 1px 12px 12px 12px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
 }
 
 .card-stats .card-body .numbers {

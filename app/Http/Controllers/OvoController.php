@@ -25,7 +25,7 @@ class OvoController extends Controller
      */
     public function create()
     {
-        return view('ovos.create');
+        return view('ovo.create');
     }
 
     /**
