@@ -145,7 +145,7 @@
                                     <span class="navbar-toggler-bar bar3"></span>
                                 </button>
                             </div>
-                            <a class="navbar-brand">Buba Financial Management Project</a>
+                            <a class="navbar-brand">Buba Financial Management Tools</a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -181,7 +181,7 @@
                                 <!-- User Menu -->
                                 <li class="nav-item btn-rotate dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="far fa-user"></i>
+                                        <i class="far fa-user"> {{Session::get('name')}}</i>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="/user">Show Profile</a>
@@ -205,7 +205,7 @@
                                 <span class="copyright">©
                                     <script>
                                       document.write(new Date().getFullYear())
-                                    </script> Buba Financial Management Project
+                                    </script> Buba Financial Management Tools
                                 </span>
                             </div>
                         </div>

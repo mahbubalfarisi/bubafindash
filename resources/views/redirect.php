@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta http-equiv = "refresh" content = "2; url = /insight" />
+      <meta http-equiv = "refresh" content = "0; url = /insight" />
    </head>
    <body>
    </body>

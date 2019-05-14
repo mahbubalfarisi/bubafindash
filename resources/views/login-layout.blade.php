@@ -42,7 +42,7 @@
     </head>
     <body>
         <div class="wrapper ">
-            <div class="main-panel">
+            <div class="main-login-panel">
                 <!-- Navbar -->
                 <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent" style="position: fixed; background-color: #fff !important; opacity: .9;">
                     <div class="container-fluid">
@@ -54,7 +54,7 @@
                                     <span class="navbar-toggler-bar bar3"></span>
                                 </button>
                             </div>
-                            <a class="navbar-brand">Buba Financial Management Project</a>
+                            <a class="navbar-brand">Buba Financial Management Tools</a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -73,31 +73,6 @@
                                 </div>
                             </form>
                             <ul class="navbar-nav">
-
-                                <!-- Notifications Menu -->
-                                <li class="nav-item btn-rotate dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="far fa-bell"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Notification #3</a>
-                                        <a class="dropdown-item" href="#">Notification #2</a>
-                                        <a class="dropdown-item" href="#">Notification #1</a>
-                                    </div>
-                                </li>
-                                <!-- End of Notifications Menu -->
-
-                                <!-- User Menu -->
-                                <li class="nav-item btn-rotate dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="far fa-user"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="/user">Show Profile</a>
-                                        <a class="dropdown-item" href="/">Log Out</a>
-                                    </div>
-                                </li>
-                                <!-- End of User Menu -->
                             </ul>
                         </div>
                     </div>
@@ -114,7 +89,7 @@
                                 <span class="copyright">©
                                     <script>
                                       document.write(new Date().getFullYear())
-                                    </script> Buba Financial Management Project
+                                    </script> Buba Financial Management Tools
                                 </span>
                             </div>
                         </div>
